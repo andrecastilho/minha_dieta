@@ -113,7 +113,7 @@ d{
   padding-top: 11%; 
 }
 .btn-comece-agora{
-  border-radius: 10%;
+  border-radius: 40px 40px 40px;
   background-image: linear-gradient(to right, rgb(224, 70, 70) , rgb(222, 51, 117));
   position: inherit;
   width: 14%;
@@ -177,7 +177,7 @@ d{
               <div class="menu">
                 <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >Menu</a>
               </div>
-              </div>
+            </div>
               <div id="" class="carousel slide" data-ride="">
                 <div class="carousel-inner">
                       <div class="carousel-item;" style="height: 300px;">
@@ -188,10 +188,10 @@ d{
                      
                 <div class="mulher-homen">
                   <div  class="mulher">
-                     <a  class="btn btn-primary btn-lg " role="button" aria-pressed="true" ><img style="float: left;" :src="'../storage/img/MULHER.png'" alt=""> Mulher</a>
+                     <a  class="btn btn-primary btn-lg " href="p/?sexo=mulher" id="mulher" role="button" aria-pressed="true" ><img style="float: left;" :src="'../storage/img/MULHER.png'" alt=""> Mulher</a>
                   </div>
                   <div class="homem" >
-                     <a class="btn btn-primary btn-lg " role="button" aria-pressed="true" ><img style="float:right ;" :src="'../storage/img/HOMEM.png'" alt="">Homem</a>
+                     <a class="btn btn-primary btn-lg " href="p/?sexo=homem" id="homem" role="button" aria-pressed="true" ><img style="float:right ;" :src="'../storage/img/HOMEM.png'" alt="">Homem</a>
                   </div>
               </div>
             </div>
@@ -255,7 +255,7 @@ d{
                   </div>
               </div>
                
-              <div class="botao-comece-agora" style="position: relative; padding-top: 45%;" >
+              <div class="botao-comece-agora" style="position: relative; padding-top: 30%;" >
             <button type="button" class="btn-comece-agora">Comece Agora</button>
           </div>
           </div>
@@ -271,13 +271,39 @@ d{
          </container>
 </template>
 
-7<script lang="ts">
+<script lang="ts">
 
-export default{
- 
-  props: {
-    doadores: Array,
-    info:String
+import { defineComponent } from 'vue'
+
+const form = defineComponent({
+        p1:null,
+        
+})
+
+export default defineComponent({
+
+
+  data() {
+    return {
+      form: this.$inertia.form({
+        sexo:null
+      }),
+    }
   },
-}
+
+  el:'#app',
+
+  methods: {
+    
+    store(e) {
+      
+    e = e || window.event;
+    e = e.target || e.srcElement;
+   
+    let homemMulher = document.getElementById(e.id) ;
+    
+    this.form.post(route("doadores.save",[homemMulher?.textContent]));
+    },
+  },
+})
 </script>

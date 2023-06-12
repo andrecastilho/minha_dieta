@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
-use App\Models\Doadores;
+use App\Models\Respostas;
 
 class DoadoresController extends Controller
 {
@@ -12,59 +12,55 @@ class DoadoresController extends Controller
     public function index()
     {
             return Inertia::render('Home', [
-            'doadores' => Doadores ::all()
-                    ->transform(function($doadores) {
+            'respostas' => Respostas ::all()
+                    ->transform(function($respostas) {
                         return [
-                            'id' =>   $doadores->id,
-                            'nome'=> $doadores->nome,
-                            'email'=> $doadores->email,
-                            'cpf'=> $doadores->cpf,
-                            'telefone'=> $doadores->telefone,
-                            'dt_nascimento'=> $doadores->dt_nascimento,
-                            'dt_cadastro'=> $doadores->dt_cadastro,
-                            'intervalo_doacao'=> $doadores->intervalo_doacao,
-                            'vl_doacao'=> $doadores->vl_doacao,
-                            'forma_pagamento'=> $doadores->forma_pagamento,
-                            'endereco'=> $doadores->endereco,
-                            'info'=>'Sucesso'                        ];
+                            'id' =>   $respostas->id,
+                        ];
                     }
                 ),
             ]);
     }
 
-    public function create(Doadores $doadores)
+
+    public function saveHome(Request $request)
     {
-        return Inertia::render('Create', [
-            'intervalo_doacao' => $doadores->only(
-                'Mensal',
-                'Bimestral',
-                'Semestral',
-                'Anual'
-            ),
-        ]);
+        $inserir = $_GET;
+        $inserir["id"] = "";
+        $inserir["tokenable_id"] = md5(microtime(true));
+        Respostas::updateOrCreate($inserir);
+        
+        return Inertia::render('P1');
     }
 
-    public function save(Request $request)
+    
+    public function saveP(Request $request)
     {
-        Doadores::updateOrCreate($request->all());
+       $p = $request['p'];
 
-        return Inertia::render('Home', [
-            'doadores' => Doadores::all()->map(function ($doadores) {
-                return [
-                    'id' => $doadores->id,
-                    'name' => $doadores->nome,
-                    'email' => $doadores->email,
-                    'cpf'=> $doadores->cpf,
-                    'telefone'=> $doadores->telefone,
-                    'dt_nascimento'=> $doadores->dt_nascimento,
-                    'dt_cadastro'=> $doadores->dt_cadastro,
-                    'intervalo_doacao'=> $doadores->intervalo_doacao,
-                    'vl_doacao'=> $doadores->vl_doacao,
-                    'forma_pagamento'=> $doadores->forma_pagamento,
-                    'endereco'=> $doadores->endereco,
-                ];
-            }),
-            'info' => "Criado com sucesso" ,
-        ]);
+
+if($request->all()['p']=="P30"){
+    $respostas = Respostas::firstOrNew(['id' =>  $_COOKIE['id']]);
+   
+    $respostas->idade = $request->all()['idade'];
+    $respostas->peso = $request->all()['peso'];
+    $respostas->altura = $request->all()['altura'];
+    $respostas->peso_desejado = $request->all()['idade'];
+    $respostas->save();
+}
+       if($request->all()['p1']){ 
+            $respostas = Respostas::firstOrNew(['id' =>  Respostas::max('id')]);
+            setcookie('id',$respostas->id);
+        }else{
+            $respostas = Respostas::firstOrNew(['id' =>  $_COOKIE['id']]);
+        }
+        $respostas->$p = $request[0];
+        $respostas->save();
+        return Inertia::render($p);
+    }
+
+    public function saveFormulario()
+    {
+        dd("Oi");
     }
 }
