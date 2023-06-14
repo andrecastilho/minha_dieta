@@ -36,31 +36,29 @@ class DoadoresController extends Controller
     
     public function saveP(Request $request)
     {
-       $p = $request['p'];
+        $p = $request['p'];
 
-
-if($request->all()['p']=="P30"){
-    $respostas = Respostas::firstOrNew(['id' =>  $_COOKIE['id']]);
-   
-    $respostas->idade = $request->all()['idade'];
-    $respostas->peso = $request->all()['peso'];
-    $respostas->altura = $request->all()['altura'];
-    $respostas->peso_desejado = $request->all()['idade'];
-    $respostas->save();
-}
-       if($request->all()['p1']){ 
-            $respostas = Respostas::firstOrNew(['id' =>  Respostas::max('id')]);
-            setcookie('id',$respostas->id);
-        }else{
+        if($request->all()['p']=="P30"){
             $respostas = Respostas::firstOrNew(['id' =>  $_COOKIE['id']]);
+            $respostas->idade = $request->all()['idade'];
+            $respostas->peso = $request->all()['peso'];
+            $respostas->altura = $request->all()['altura'];
+            $respostas->peso_desejado = $request->all()['idade'];
+            $respostas->email = $request->all()['email'];
+            $respostas->save();
         }
-        $respostas->$p = $request[0];
-        $respostas->save();
-        return Inertia::render($p);
-    }
+            if($request->all()['p1']){ 
+                $respostas = Respostas::firstOrNew(['id' =>  Respostas::max('id')]);
+                setcookie('id',$respostas->id);
+                $respostas->p1 = $request[0];
+                $respostas->save();
+            }else{
+                $respostas = Respostas::firstOrNew(['id' =>  $_COOKIE['id']]);
+                $saveP = "P".(substr($p,1)-1);
+                $respostas->$saveP = $request[0];
+                $respostas->save();
+            }
 
-    public function saveFormulario()
-    {
-        dd("Oi");
+            return Inertia::render($p);
     }
 }

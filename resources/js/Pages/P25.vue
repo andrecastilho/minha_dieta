@@ -70,7 +70,9 @@
                   </div>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > AVANÇAR</button><br><br>
+                        <div style="text-align: center;position: relative;padding-left: 78%;"> 
+                          <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > AVANÇAR</button><br><br>
+                        </div>
                        
                       </div>
                   </div>

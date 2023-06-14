@@ -48,6 +48,12 @@
   font-size: large;
   width: 100%;
 }
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 
 </style>
         <template> 
@@ -59,6 +65,11 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+                  <div class="porcentagem">
+                    <b style="color: white;">16%</b>
+                    <img style="width: 30%;" :src="'../../storage/img/25.png'">
+                  </div>
+
                     <div class="pergunta">
                       Quanto tempo já se passou <b>desde a última vez</b>
                         que você <b>esteve no seu peso ideal?</b>

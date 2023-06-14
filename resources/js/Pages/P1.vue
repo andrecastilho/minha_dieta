@@ -47,6 +47,13 @@
   text-align: left;
   font-size: large;
   width: 100%;
+
+}
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
 }
 
 </style>
@@ -58,6 +65,10 @@
               </div>
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
+                <div class="porcentagem">
+                  <b style="color: white;">1%</b>
+                  <img style="width: 30%;" :src="'../../storage/img/25.png'">
+                </div>
                 <div class="corpo">
                     <div class="pergunta">
                       Com que frequência você pratica <b>atividade física</b>?

@@ -1,0 +1,4 @@
+Nome de usuário do FTP: minha_dieta@minhadietacetogenica.com
+Luks1989!@#$
+Servidor FTP: ftp.fishagencia.com.br
+FTP & porta FTPS explícita:  21

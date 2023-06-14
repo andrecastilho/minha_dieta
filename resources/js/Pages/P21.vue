@@ -48,7 +48,12 @@
   font-size: large;
   width: 100%;
 }
-
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 </style>
         <template> 
           <container>
@@ -71,8 +76,9 @@
                   </div>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > Avançar</button><br><br>
-                      
+                        <div style="text-align: center;position: relative;padding-left: 80%;"> 
+                          <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > Avançar</button><br><br>
+                        </div>
                       </div>
                   </div>
               </div>

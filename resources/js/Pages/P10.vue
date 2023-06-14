@@ -48,6 +48,12 @@
   font-size: large;
   width: 100%;
 }
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 
 </style>
         <template> 
@@ -59,6 +65,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+                  <div class="porcentagem">
+                    <b style="color: white;">20%</b>
+                    <img style="width: 30%;" :src="'../../storage/img/25.png'">
+                  </div>
                   <div class="pergunta">
                     <b>Qual alimento não pode</b>
                       faltar na sua alimentação?
@@ -67,8 +77,7 @@
                       <div class="resposta">
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/ovo-frito.png'"> Ovo</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/castanha.png'"> Castanhas</button><br><br>
-                        
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/queijo.png'"> Queijo</button><br><br>
+                                                <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/queijo.png'"> Queijo</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/queijo.png'"> Queijo cottage</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/manteiga.png'"> Manteiga</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/coco.png'"> Coco</button><br><br>

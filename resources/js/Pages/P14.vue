@@ -48,7 +48,12 @@
   font-size: large;
   width: 100%;
 }
-
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 </style>
         <template> 
           <container>
@@ -59,10 +64,15 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+                  <div class="porcentagem">
+                    <b style="color: white;">35%</b>
+                    <img style="width: 30%;" :src="'../../storage/img/50.png'">
+                  </div>
                   <div class="pergunta">
                     <b>Os níveis de açúcar</b> em seu sangue estão normais?
                   </div>
                   <div class="todo">
+                   
                       <div class="resposta">
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >NÃO TENHO CERTEZA</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > SIM, ESTÁ TUDO SOB CONTROLE</button><br><br>

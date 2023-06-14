@@ -48,7 +48,12 @@
   font-size: large;
   width: 100%;
 }
-
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 </style>
         <template> 
           <container>
@@ -59,18 +64,22 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+                  <div class="porcentagem">
+                    <b style="color: white;">55%</b>
+                    <img style="width: 30%;" :src="'../../storage/img/50.png'">
+                  </div>
+                
                   <div class="pergunta">
-                    <img class="logo" :src="'../../storage/img2/APETITE.png'">
+                        <b>Você costuma comer por impulso </b>emocional?
                   </div>
                   <div class="todo">
                       <div class="resposta">
-                        <b>Você costuma comer por impulso </b>emocional?
+                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >SIM, MUITO</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >MUITO AS VEZES</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >RARAMENTE</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >NUNCA</button><br><br>
                       </div>
-                  </div>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >SIM, MUITO</button><br><br>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >MUITO AS VEZES</button><br><br>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >RARAMENTE</button><br><br>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >NUNCA</button><br><br>
+                </div>
               </div>
                    
           <div class="rodape">

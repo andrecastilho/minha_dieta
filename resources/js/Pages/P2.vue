@@ -48,7 +48,12 @@
   font-size: large;
   width: 100%;
 }
-
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 </style>
         <template> 
           <container>
@@ -58,6 +63,12 @@
               </div>
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
+
+               <div class="porcentagem">
+                  <b style="color: white;">12%</b>
+                  <img style="width: 30%;" :src="'../../storage/img/25.png'">
+                </div>
+
                 <div class="corpo">
                     <div class="pergunta">
                       <b>Você tem a energia e o foco necessários </b>para enfrentar os seus desaﬁos diários?
@@ -109,7 +120,7 @@ export default defineComponent({
   data() {
     return {
       form: this.$inertia.form({
-        p1:form.p1,
+        p1:null,
         p:"P3",
       }),
     }

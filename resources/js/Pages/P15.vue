@@ -60,7 +60,7 @@
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
                   <div class="pergunta">
-                    <img class="logo" :src="'../../storage/img2/APETITE.png'">
+                    <img class="logo" :src="'../../storage/img2/CALORIAS.png'">
                   </div>
                   <div class="todo">
                       <div class="resposta">
@@ -76,7 +76,9 @@
                         sangue.
                       </div>
                   </div>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >AVANÇAR</button><br><br>
+                  <div style="text-align: center;position: relative;padding-left: 86%;"> 
+                    <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg" >AVANÇAR</button><br><br>
+                  </div>
               </div>
                    
           <div class="rodape">

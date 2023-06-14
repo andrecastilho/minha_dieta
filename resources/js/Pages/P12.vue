@@ -48,7 +48,12 @@
   font-size: large;
   width: 100%;
 }
-
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 </style>
         <template> 
           <container>
@@ -59,6 +64,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+                  <div class="porcentagem">
+                    <b style="color: white;">26%</b>
+                    <img style="width: 30%;" :src="'../../storage/img/50.png'">
+                  </div>
                   <div class="pergunta">
                     <b>Quantas horas por noite</b> você dorme?
                   </div>

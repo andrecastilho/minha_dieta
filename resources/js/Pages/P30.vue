@@ -7,7 +7,6 @@
 .logo {
   width: 17%;
 }
-
 .rodape{
   background-color: rgb(60, 70, 37);
   padding: 10%;
@@ -18,7 +17,6 @@
     text-align: center;
     padding-top: 20%;
 }
-
 .corpo{
   font-family: 'Montserrat';
   background-color: #717850;
@@ -30,25 +28,75 @@
 }
 
 .pergunta{
-  padding: 6%;
+  padding: 1%;
   font-size: 28px;
+  
 }
-
 .todo{
   width: 100%;
 }
 .resposta{
   padding-left: 20%;
   padding-right: 17%;
- }
- button{
-  color: white;
-  background-color: rgb(60, 70, 37);
-  text-align: left;
-  font-size: large;
+}
+button{
+color: white;
+background-color: rgb(60, 70, 37);
+text-align: left;
+font-size: large;
+width: 100%;
+}
+.boxPlano{
+display: inline;
+padding-left: 10%;
+width: 100%;
+position: relative;
+
+}
+.conteudo-box-plano{
+text-align: center;
+width: 100%;
+padding: 0%;
+background-color: #717850;
+border: 10cap;
+}
+div.container {
+  background-color: #717850;
   width: 100%;
+  overflow: hidden;
+}
+button{
+overflow: hidden;
+background-image: linear-gradient(to right, rgb(48, 117, 214), rgb(32, 71, 114));
+text-align: center;
+padding: 5vw 0vw 5vw 0vw;
+border: 10px solid #717850;
+width: 20%;
+height: 20%;
 }
 
+div.op2 {
+  overflow: hidden;
+  background-color: rgb(12, 67, 185);
+  display: inline-block;
+  margin-right: 0vw;
+  text-align: center;
+  padding: 5vw 0vw 5vw 0vw;
+  min-width:20vw;
+  border: 10px solid #717850;
+  font-family: 'Montserrat';
+}
+div.op3 {
+  overflow: hidden;
+  background-color: rgb(12, 67, 185);
+  display: inline-block;
+  margin-right: 0vw;
+  text-align: center;
+  padding: 5vw 0vw 5vw 0vw;
+  min-width:20vw;
+  border: 10px solid #717850;
+  font-family: 'Montserrat';
+}
 </style>
         <template> 
           <container>
@@ -63,10 +111,30 @@
                     Processando informações ...
                   </div>
                   <div class="todo">
-                     
+                    <di class="pergunta">
+                      <h1>Obtenha seu plano na dieta Cetogênica e o acesso ao conteudo Vip</h1>
+                    </di>
+                    <div class="pergunta">
+                      <b>Escolha seu plano</b>
+                    </div>
                   </div>
+                  <div class="container">
+                    <button class="op1">
+                      <div>3 Mêses Plano Keto Diet</div>
+                      <div>R$2.30</div>
+                      <div >Cobrado a cada 3 mêses</div>
+                    </button>
+                    <button class="op2">1 Mêses Plano Keto Diet
+                      <div>R$4.60</div>
+                      <div >Cobrado a cada 1 mêses</div>
+                    </button>
+                    <button class="op3">6 Mêses Plano Keto Diet
+                      <div>R$50</div>
+                      <div >Cobrado a cada 6 mêses</div>
+                    </button>
               </div>
-                   
+            </div>
+             
           <div class="rodape">
               <div>
                 <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
@@ -82,36 +150,10 @@
 
 import { defineComponent } from 'vue'
 
-const form = defineComponent({
-        p1:null,
-        p:null
-        
-})
 
 export default defineComponent({
 
-
-  data() {
-    return {
-      form: this.$inertia.form({
-        p1:false,
-        p:"P22",
-      }),
-    }
-  },
-
-  el:'#app',
-
-  methods: {
-    
-    store(e) {
-      e = e || window.event;
-      e = e.target || e.srcElement;
-    
-      let selecionado = document.getElementById(e.id) ;
-      
-      this.form.post(route("doadores.saveP",[[selecionado?.textContent],selecionado?.textContent]));
-    },
-  },
-})
+ 
+});
+ 
 </script>

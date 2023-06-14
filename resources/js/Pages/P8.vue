@@ -48,7 +48,18 @@
   font-size: large;
   width: 100%;
 }
-
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
+.porcentagem{
+  width: 100%;
+  text-align: center;
+  background-color: #717850;
+  padding-top: 1%;
+}
 </style>
         <template> 
           <container>
@@ -59,6 +70,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+                  <div class="porcentagem">
+                    <b style="color: white;">18%</b>
+                    <img style="width: 30%;" :src="'../../storage/img/25.png'">
+                  </div>
                   <div class="pergunta">
                     Qual carne <b>não pode
                     faltar</b> na sua alimentação?
@@ -68,7 +83,6 @@
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img2/FRANGO.png'"> Frango</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img2/CARNE SUINA.png'"> Carne Suina</button><br><br>
                         <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img2/CARNE BOVINA.png'"> Carne Bovina</button><br><br>
-
                         <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img2/BACON.png'">Bacon</button><br><br>
                         <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img2/BACALHAU.png'">Bacalhau</button><br><br>
                         <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img2/SALMAO.png'">Salmão</button><br><br>

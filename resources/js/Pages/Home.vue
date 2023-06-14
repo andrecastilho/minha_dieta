@@ -255,7 +255,7 @@ d{
                   </div>
               </div>
                
-              <div class="botao-comece-agora" style="position: relative; padding-top: 30%;" >
+              <div class="botao-comece-agora" style="position: relative; padding-top: 40%;" >
             <button type="button" class="btn-comece-agora">Comece Agora</button>
           </div>
           </div>

@@ -70,6 +70,7 @@
                           <input type="text" name="altura" id="altura" v-model="form.altura" placeholder="Altura"> <br><br>
                           <input type="text" name="peso" id="peso" v-model="form.peso" placeholder="Peso kg"> <br><br>
                           <input type="text" name="peso_desejado" id="peso_desejado" v-model="form.peso_desejado" placeholder="Peso desejado kg"> <br><br>
+                          <input type="text" name="email" id="email" v-model="form.email" placeholder="Email"> <br><br>
                           <button type="submit" id="p1" class="btn  btn-lg " >FINALIZAR</button><br><br>
                         </form>
                       </div>
@@ -107,7 +108,8 @@ export default defineComponent({
         idade:form.idade,
         peso:form.peso,
         altura:form.altura,
-        peso_desejado:form.peso_desejado
+        peso_desejado:form.peso_desejado,
+        email:form.email,
 
       }),
     }

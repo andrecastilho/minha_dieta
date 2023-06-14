@@ -58,8 +58,8 @@
               </div>
             </div>
                 <div class="corpo">
-                  <div style="width: 50%;text-align: center ;">
-                    <img class="d-block w-100" :src="'../storage/img/CALORIAS.jpg'" alt="">
+                  <div style="width: 100%;padding-left: 0% ;background-color:#717850;">
+                    <img style="width: 50%;"  :src="'../storage/img/CALORIAS.jpg'" alt="">
                   </div>
                  
                     <div class="pergunta">

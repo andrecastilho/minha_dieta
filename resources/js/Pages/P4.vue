@@ -57,13 +57,11 @@
                 <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
               </div>
             </div>
+                <div style="width: 100%;padding-left: 28% ;background-color:#717850;">
+                        <img style="width: 50%;" :src="'../storage/img/GRÁFICO.jpg'" alt="">
+                </div>
                 <div class="corpo">
-                  <div style="width: 50%;text-align: center ;">
-                    <img class="d-block w-100" :src="'../storage/img/GRÁFICO.jpg'" alt="">
-                  </div>
-                 
                     <div class="pergunta">
-                     
                       <b>A dieta Cetogênica pode ser
                       realmente eﬁcaz, mesmo sem fazer
                       exercícios.</b> Em média, as pessoas que
