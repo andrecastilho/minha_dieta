@@ -27,10 +27,11 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 9%;
 }
 
 .pergunta{
-  padding: 6%;
+  padding: 3%;
   font-size: 28px;
 }
 
@@ -48,6 +49,9 @@
   font-size: large;
   width: 100%;
 }
+.avancar{
+  padding-left: 65%;
+}
 
 </style>
         <template> 
@@ -58,9 +62,9 @@
               </div>
             </div>
                 <div class="corpo">
-                  <div style="width: 100%;padding-left: 0% ;background-color:#717850;">
-                    <img style="width: 50%;"  :src="'../storage/img/CALORIAS.jpg'" alt="">
-                  </div>
+                  <div style="width: 100%;padding-left: 0% ;padding-top: 2%;background-color:#717850;">
+                        <img style="padding-left: 2%; width: 37%;" :src="'../storage/img/CALORIAS.png'" alt="">
+                </div>
                  
                     <div class="pergunta">
                      
@@ -72,21 +76,14 @@
                       culpa.
                     </div>
                   <div class="todo">
-                      <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >AVANÇAR</button><br><br>
+                    <div class="avancar"> 
+                        <button type="button" style="text-align: center;" name="p1" id="p1" @click="store" class="btn  btn-lg " >AVANÇAR</button><br><br>
                       </div>
                      
                   </div>
               </div>
                    
-          <div class="rodape">
-              <div>
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
-              </div>
-              <div class="direitos">
-                Cetogênica | Todos os direitos reservados
-              </div>
-          </div>
+           
          </container>
 </template>
 

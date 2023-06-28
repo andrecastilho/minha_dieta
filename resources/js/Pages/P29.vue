@@ -27,6 +27,7 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 9%;
 }
 
 .pergunta{
@@ -71,20 +72,15 @@
                           <input type="text" name="peso" id="peso" v-model="form.peso" placeholder="Peso kg"> <br><br>
                           <input type="text" name="peso_desejado" id="peso_desejado" v-model="form.peso_desejado" placeholder="Peso desejado kg"> <br><br>
                           <input type="text" name="email" id="email" v-model="form.email" placeholder="Email"> <br><br>
-                          <button type="submit" id="p1" class="btn  btn-lg " >FINALIZAR</button><br><br>
+                          <div style="text-align: center;position: relative;padding-left: 78%;"> 
+                            <button type="submit" id="p1" class="btn  btn-lg " >FINALIZAR</button><br><br>
+                          </div>
                         </form>
                       </div>
                   </div>
               </div>
                    
-          <div class="rodape">
-              <div>
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
-              </div>
-              <div class="direitos">
-                Cetogênica | Todos os direitos reservados
-              </div>
-          </div>
+           
          </container>
 </template>
 
@@ -119,18 +115,11 @@ export default defineComponent({
 
   methods: {
 
-    onSubmit(event) {
-        event.preventDefault()
-        alert(JSON.stringify(this.form))
-      },
+  
     
     store(e) {
-      e = e || window.event;
-      e = e.target || e.srcElement;
-    
-      let selecionado = document.getElementById(e.id) ;
-      
-      this.form.post(route("doadores.saveFormulario",[[selecionado?.textContent],selecionado?.textContent]));
+     
+      this.form.post(route("doadores.saveFormulario",[]));
     },
   },
 })

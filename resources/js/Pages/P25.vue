@@ -27,6 +27,7 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 9%;
 }
 
 .pergunta{
@@ -59,6 +60,11 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+
+                  <div style="text-align: center;padding-top: 5%;">
+                <img style="width: 40%;" class="logo" :src="'../../storage/img/copos-agua.png'">
+              </div>
+                  
                   <div class="pergunta">
                   A maioria das pessoas obteve
                   resultados ainda melhores combinando
@@ -78,14 +84,7 @@
                   </div>
               </div>
                    
-          <div class="rodape">
-              <div>
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
-              </div>
-              <div class="direitos">
-                Cetogênica | Todos os direitos reservados
-              </div>
-          </div>
+           
          </container>
 </template>
 

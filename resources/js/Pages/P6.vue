@@ -1,4 +1,12 @@
 <style scoped>
+@media only screen and (max-device-width: 900px) {
+
+.balao{
+  
+  margin-top: -13% !important;
+}
+
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -25,8 +33,8 @@
   color: antiquewhite;
   text-align: center;
   font-size: large;
-  padding-left: 5%;
-  padding-right: 5%;
+  height: 100%;
+  padding: 5%;
 }
 
 .pergunta{
@@ -54,7 +62,21 @@
   background-color: #717850;
   padding-top: 1%;
 }
-
+.drop {
+  background-color: #0288d1;
+    height: 50px;
+    width: 30px;
+    border-radius: 160% 56% 39% 193%;
+    transform: rotate(-90deg);
+    float: right;
+    margin: 30%;
+}
+.balao{
+   float: right;
+   padding-right: 48%;
+   margin-top: -7.5%;
+   display: flex;
+}
 </style>
         <template> 
           <container>
@@ -64,15 +86,23 @@
               </div>
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
-                <div class="corpo">
-                  <div class="porcentagem">
-                    <b style="color: white;">17%</b>
-                    <img style="width: 30%;" :src="'../../storage/img/25.png'">
+               
+            
+
+               <div class="corpo">
+                <div class="balao">
+                <div class="drop">
+                  <div style="padding-left: 50%; transform: rotate(90deg);">
+                    8%
                   </div>
+                </div>
+              </div>
+
                   <div class="pergunta">
                     Você <b>se preocupa com a quantidade
                     de calorias que você consome?</b>
                   </div>
+                  Selecione a opção que melhor se aplica a você:<br><br>
                   <div class="todo">
                       <div class="resposta">
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >SIM! ME PREOCUPO E REGULO AQUANTIDADE DE CALORIAS QUE CONSUMO</button><br><br>
@@ -83,14 +113,7 @@
                   </div>
               </div>
                    
-          <div class="rodape">
-              <div>
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
-              </div>
-              <div class="direitos">
-                Cetogênica | Todos os direitos reservados
-              </div>
-          </div>
+           
          </container>
 </template>
 

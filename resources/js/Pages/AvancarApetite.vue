@@ -27,6 +27,7 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 9%;
 }
 
 .pergunta{
@@ -73,14 +74,7 @@
                   </div>
               </div>
                    
-          <div class="rodape">
-              <div>
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
-              </div>
-              <div class="direitos">
-                Cetogênica | Todos os direitos reservados
-              </div>
-          </div>
+           
          </container>
 </template>
 

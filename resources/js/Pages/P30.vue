@@ -1,159 +1,181 @@
 <style scoped>
-.head{
-    text-align: right;
-    padding: 0.5%;
+/* INICIO REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
+@media print {
+
+}
+/* FIM REGRAS PARA DISPOSITIVOS DE IMPRESSÃO */
+
+/* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES */
+@media screen and (min-width: 320px) {
+
+}
+/* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES */
+
+/* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
+@media screen and (max-width: 580px) {
+.capa-imagem{
+  display: none !important;
+}
+}
+/* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
+
+/* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 1024 PIXELS. POR EXEMPLO: COMPUTADORES DESKTOP E NOTEBOOKS */
+@media screen and (min-width: 1024px) {
+
+}
+
+container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .capa-imagem{
+   overflow: hidden;
+  }
+
+  .logo {
+  width: 30%;
+  padding: 2%;
+  background-color: rgb(60, 70, 37);
+}
+div{
+  border: 1px black solid;
+  font-family: 'Montserrat';
+}.prato_ultima_pagina{
+  width: 135%;
+}
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+a {
+    background-color: #ee7a0d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20% 10%;
+    margin: 10% ;
+}
+.row0{
+  position: absolute;
+    top: 78%;
+    width: 100%;
+    background-color: rgb(60, 70, 37);
+    color: white;
+    padding: 10%;
+    padding-top: 5%;
+    font-size: 140%;
+
+}
+h3{
+  color: #4CAF50;
+  font-size: 150%;
+  padding-top: 1%;
+  font-weight: bold;
+}
+.para-de-perder{
+  font-size: 150%;
+  margin: 10%;
+}
+.for-logo{
+  margin: 10%;
+}
+.balao-horizontal{
+  border: 1px white solid;
+  color: white;
+  margin: 4px 2px;
+  border-color: white;
+  border-radius: 12px;
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 50px 30px;  
+    width: 63%;
+    text-align: center;
+    font-size: 80%;
+}
+.row{
+  position: absolute;
+    width: 100%;
     background-color: rgb(60, 70, 37);
 }
-.logo {
-  width: 17%;
-}
-.rodape{
-  background-color: rgb(60, 70, 37);
-  padding: 10%;
-}
-.direitos{
-  color: white;
-    font-size: 12px;
-    text-align: center;
-    padding-top: 20%;
-}
-.corpo{
-  font-family: 'Montserrat';
-  background-color: #717850;
-  color: antiquewhite;
-  text-align: center;
-  font-size: large;
-  padding-left: 5%;
-  padding-right: 5%;
-}
+.medidas{
+  font-size: 110%;
+  color: darkolivegreen;
+  ;
 
-.pergunta{
-  padding: 1%;
-  font-size: 28px;
-  
-}
-.todo{
-  width: 100%;
-}
-.resposta{
-  padding-left: 20%;
-  padding-right: 17%;
-}
-button{
-color: white;
-background-color: rgb(60, 70, 37);
-text-align: left;
-font-size: large;
-width: 100%;
-}
-.boxPlano{
-display: inline;
-padding-left: 10%;
-width: 100%;
-position: relative;
-
-}
-.conteudo-box-plano{
-text-align: center;
-width: 100%;
-padding: 0%;
-background-color: #717850;
-border: 10cap;
-}
-div.container {
-  background-color: #717850;
-  width: 100%;
-  overflow: hidden;
-}
-button{
-overflow: hidden;
-background-image: linear-gradient(to right, rgb(48, 117, 214), rgb(32, 71, 114));
-text-align: center;
-padding: 5vw 0vw 5vw 0vw;
-border: 10px solid #717850;
-width: 20%;
-height: 20%;
-}
-
-div.op2 {
-  overflow: hidden;
-  background-color: rgb(12, 67, 185);
-  display: inline-block;
-  margin-right: 0vw;
-  text-align: center;
-  padding: 5vw 0vw 5vw 0vw;
-  min-width:20vw;
-  border: 10px solid #717850;
-  font-family: 'Montserrat';
-}
-div.op3 {
-  overflow: hidden;
-  background-color: rgb(12, 67, 185);
-  display: inline-block;
-  margin-right: 0vw;
-  text-align: center;
-  padding: 5vw 0vw 5vw 0vw;
-  min-width:20vw;
-  border: 10px solid #717850;
-  font-family: 'Montserrat';
 }
 </style>
         <template> 
           <container>
-            <div class="head" >
-              <div style="text-align: center;">
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
+
+            <div class="row" style="background-color: bisque;">
+              <div class="col-sm" style="margin: 2%; text-align: center;margin-top: 10%;padding-left: 4%;text-align: left;">
+                <div class="for-logo">
+                  <img class="logo" :src="'../storage/img/LOGOTIPO.png'">
+                </div>
+                <div class="para-de-perder">
+                  Pare de perder tempo com dietas que não funcionam, <br>
+                  <b style="font-weight: bold;">emageça com saúde
+                  e seja mais confiante !</b>
+                </div>
+                <a class=""> Quero meu plano agora</a>
+              </div>
+              
+              <div class="col-sm" style="z-index: 1000;">
+                <div class="capa-imagem">
+                  <img class="prato_ultima_pagina" :src="'../storage/img/prato_ultima_pagina.png'">
+                </div>
               </div>
             </div>
-               <div style="width: 100%; height: 2px;background-color: blue; "> </div>
-                <div class="corpo">
-                  <div class="pergunta">
-                    Processando informações ...
+              <div class="row0">
+                <div class="col-sm" >
+                   Lucas com base em suas respostas, recomendamos o
                   </div>
-                  <div class="todo">
-                    <di class="pergunta">
-                      <h1>Obtenha seu plano na dieta Cetogênica e o acesso ao conteudo Vip</h1>
-                    </di>
-                    <div class="pergunta">
-                      <b>Escolha seu plano</b>
-                    </div>
+                  <div class="col-sm" style="padding-top: 0%;">
+                  <b><h3>Método CETO30</h3></b>
+                </div>
+                <div class="col-sm" style="padding-top: 0%;">
+                <b>o plano de dieta cetogênica que vai <br>acelerar seu ema recimento em 4 semanas .</b>
+                </div>
+
+                <div class="balao-horizontal">
+                  <div>
+                    <div class="medidas">
+                      <b>33</b></div>
+                    <div>Sua idade</div>
                   </div>
-                  <div class="container">
-                    <button class="op1">
-                      <div>3 Mêses Plano Keto Diet</div>
-                      <div>R$2.30</div>
-                      <div >Cobrado a cada 3 mêses</div>
-                    </button>
-                    <button class="op2">1 Mêses Plano Keto Diet
-                      <div>R$4.60</div>
-                      <div >Cobrado a cada 1 mêses</div>
-                    </button>
-                    <button class="op3">6 Mêses Plano Keto Diet
-                      <div>R$50</div>
-                      <div >Cobrado a cada 6 mêses</div>
-                    </button>
-              </div>
-            </div>
-             
-          <div class="rodape">
-              <div>
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
-              </div>
-              <div class="direitos">
-                Cetogênica | Todos os direitos reservados
-              </div>
-          </div>
+                  <div>
+                    <div class="medidas">
+                      <b>1.74</b></div>
+                    <div>Sua Altura (cm )</div>
+                  </div>
+                  <div>
+                    <div class="medidas">
+                       <b>33</b> </div>
+                    <div>Seu Peso (kg)</div>
+                  </div>
+                </div>       
+              </div>  
+                    
+        
          </container>
 </template>
 
+
+
 <script lang="ts">
+// import { defineComponent } from 'vue'
+// export default defineComponent({
 
-import { defineComponent } from 'vue'
-
-
-export default defineComponent({
-
- 
-});
+// });
  
 </script>

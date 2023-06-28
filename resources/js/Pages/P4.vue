@@ -27,6 +27,7 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 9%;
 }
 
 .pergunta{
@@ -47,18 +48,19 @@
   text-align: left;
   font-size: large;
   width: 100%;
+  text-align: center;
 }
 
 </style>
         <template> 
           <container>
             <div class="head" >
-              <div>
+              <div style="text-align: center;">
                 <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
               </div>
             </div>
-                <div style="width: 100%;padding-left: 28% ;background-color:#717850;">
-                        <img style="width: 50%;" :src="'../storage/img/GRÁFICO.jpg'" alt="">
+                <div style="width: 100%;padding-left: 30% ;padding-top: 2%;background-color:#717850;">
+                        <img style="padding-left: 2%; width: 40%;" :src="'../storage/img/GRÁFICO.png'" alt="">
                 </div>
                 <div class="corpo">
                     <div class="pergunta">
@@ -71,21 +73,14 @@
                       efeito sanfona.
                     </div>
                   <div class="todo">
-                      <div class="resposta">
+                    <div style="text-align: center;position: relative;padding-left: 68%;"> 
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >AVANÇAR</button><br><br>
                       </div>
                      
                   </div>
               </div>
                    
-          <div class="rodape">
-              <div>
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
-              </div>
-              <div class="direitos">
-                Cetogênica | Todos os direitos reservados
-              </div>
-          </div>
+           
          </container>
 </template>
 
