@@ -27,7 +27,8 @@
   }
   #textoImagem1{
     position: absolute;
-    font-size: 50% !important;
+    font-size: 0.8rem !important;
+    font-weight: bold;
   }
   .mulher-homen{
     position: unset !important;
@@ -52,11 +53,12 @@
   }
 }
 
-
+.btn{
+  width: 40rem;
+}
 
 .corpo {
   font-family: 'Montserrat';
-  background-color: #717850;
   color: antiquewhite;
   text-align: center;
   font-size: large;
@@ -111,9 +113,9 @@ container {
 }
 
 .plano {
-     padding-left: 32%;
-    padding-right: 15%;
+    padding-left: 24%;
     word-wrap: break-word;
+    width: 109%;
 }
 
 button {
@@ -121,7 +123,6 @@ button {
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 77%;
 }
 
 span {
@@ -140,7 +141,9 @@ d {
 }
 
 .objetivos-emagrecimento {
+  position: relative;
   padding: 6%;
+  left: 3rem;
 }
 
 .todo-plano {
@@ -152,7 +155,7 @@ d {
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 50%;
+  width: 14rem;
   border-radius: 3%;
   padding: 2%;
   float: left;
@@ -161,19 +164,25 @@ d {
 }
 
 .junte-se {
+  position: relative;
   padding: 7%;
   background-color: #717850;
   color: white;
   text-align: center;
   font-family: 'Montserrat';
-  font-size: 22px;
+  font-size: 2rem;
+  left: 3rem;
 }
 
 .prato2 {
-  width: 50%;
-  border-radius: 2%;
-  padding-top: 20%;
+ width: 73%;
+    border-radius: 2%;
+    position: relative;
+    /* padding-top: 20%; */
+    bottom: 23rem;
+    left: 9rem;
 }
+  
 
 .btn-comece-agora {
   border-radius: 40px 40px 40px;
@@ -214,6 +223,8 @@ d {
 
 .painel-duplo {
   background-color: #717850;
+  position: relative;
+    bottom: 9rem;
 }
 
 .mulher-homen {
@@ -252,16 +263,12 @@ display: flex;
 }
 
 .o_que_e_citogenica{
+  position: relative;
+  bottom: 10rem;
     box-sizing: border-box;
     display: block;
     justify-content: center;
     align-items: center;
-    -webkit-flex-wrap: wrap;
--moz-flex-wrap: wrap;
--ms-flex-wrap: wrap;
--o-flex-wrap: wrap;
-flex-wrap: wrap;
-    padding-top: 12rem;
     font-size: 2rem;
 }
 
@@ -341,7 +348,9 @@ flex-wrap: wrap;
 .textos{
   background-color: #717850;
 }
-
+.img_prato2{
+  width: 37rem;
+}
 </style>
 <template>
   <container>
@@ -357,11 +366,10 @@ flex-wrap: wrap;
             </label>
 
             <ul class="menu__box">
-              <li><a class="menu__item" href="#">Home</a></li>
-              <li><a class="menu__item" href="#">About</a></li>
-              <li><a class="menu__item" href="#">Team</a></li>
-              <li><a class="menu__item" href="#">Contact</a></li>
-              <li><a class="menu__item" href="#">Twitter</a></li>
+              <li><a class="menu__item" href="#">Central de ajuda</a></li>
+              <li><a class="menu__item" href="#">Blog</a></li>
+              <li><a class="menu__item" href="#">Entrar</a></li>
+            
             </ul>
           </div>
       </div>
@@ -377,15 +385,13 @@ flex-wrap: wrap;
           <br><br>
         </div>
 
-
-
         <div class="mulher-homen">
           <div class="mulher">
-            <a class="btn btn-primary btn-lg " href="p/?sexo=mulher" id="mulher" role="button" aria-pressed="true"><img
+            <a class="btn btn-primary btn-lg " style="width: 8rem;" href="p/?sexo=mulher" id="mulher" role="button" aria-pressed="true"><img
                 style="float:right;width: 15%; ;" :src="'../storage/img/MULHER.png'" alt="homem"> Mulher </a>
           </div>
           <div class="homem">
-            <a class="btn btn-primary btn-lg " href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
+            <a class="btn btn-primary btn-lg " style="width: 8rem;" href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
                 style="float:right;width: 18%; ;" :src="'../storage/img/HOMEM.png'" alt="homem">Homem</a>
           </div>
         </div>
@@ -432,7 +438,7 @@ flex-wrap: wrap;
           </div>
         </div>
 
-        <div style="overflow: hidden;">
+        <div style="position: relative; left: 4rem;">
           <img class="jornais" :src="'../storage/img2/JORNAIS.png'">
         </div>
         <br>
@@ -453,7 +459,7 @@ flex-wrap: wrap;
               <img class="checked" :src="'../storage/img/checked.png'">Suporte para tirar todas as suas dúvidas<br>
             </div>
           </div>
-          <div class="">
+          <div class="img_prato2">
             <img class="prato2" :src="'../storage/img2/prato2.jpg'">
           </div>
 
@@ -462,7 +468,7 @@ flex-wrap: wrap;
           </div>
           <br>
           <div class="painel-duplo">
-            <div class="oque-vai-receber" style="float: right;width:45%;">
+            <div class="oque-vai-receber" style="float: right;width:45%;padding: 5%;">
               <b>A dieta Cetogênica é bem simples</b> -
               alimente-se de gorduras para eliminar
               gordura. A ideia básica deste estilo de
@@ -471,7 +477,7 @@ flex-wrap: wrap;
               fonte de energia e no lugar <b>queima
                 gordura como combustível.</b><br>
             </div>
-            <div class="oque-vai-receber" style="float: left;width:45%;">
+            <div class="oque-vai-receber" style="float: left;width:45%;padding:5%">
               <b>A dieta Cetogênica envolve uma
                 drástica redução da ingestão de
                 carboidratos</b> para não mais que 5% da

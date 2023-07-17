@@ -1,4 +1,12 @@
 <style scoped>
+@media only screen and (max-device-width: 600px) {
+button{
+  position: relative;
+  left: -8rem;
+}
+
+
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -43,12 +51,12 @@
   padding-right: 17%;
  }
  button{
+  position: relative;
   color: white;
   background-color: rgb(60, 70, 37);
-  text-align: left;
   font-size: large;
-  width: 100%;
   text-align: center;
+  right: 20rem;
 }
 
 </style>

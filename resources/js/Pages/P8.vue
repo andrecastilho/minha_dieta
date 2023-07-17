@@ -1,10 +1,14 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {
-
+.btn_avancar{
+  width: 165%;
+}
 .botao-comida{
   
   padding: 29% !important;
   word-wrap: break-word;
+  width: 152%;;
+
 }
 .logo{
   width: 51% !important;
@@ -138,30 +142,33 @@ input[type=checkbox]:disabled::after {
      background-color: #dcd8d8 !important;
 }
 
-/*OUTRAS CORES = Cores alternativas*/
 
-input[type=checkbox].red:checked::before {
-     background-color: #fd4554;
-}
-
-input[type=checkbox].blue:checked::before {
-     background-color: #0f90dc;
-}
-
-input[type=checkbox].red:checked::before {
-     background-color: #fd4554;
-}
-
-input[type=checkbox].purple:checked::before {
-     background-color: #9e3eff;
-}
 .botao-comida{
-  background-color: rgb(60, 70, 37);
-  text-align: left;
-  border-radius: 20px 20px 30px 5px;
-  padding: 1%;
+     background-color: rgb(60, 70, 37);
+    text-align: left;
+    border-radius: 40px;
+    padding: 2%;
 }
-
+.btn_avancar{
+  text-align: center;
+  position: relative;
+  padding-left: 70%;
+}
+.btn{
+  text-align: center;
+    width: 8rem;
+    position: relative;
+    left: 1rem;
+}
+ .botao-comida:active{
+  background-color: #0f90dc !important;
+}
+.clicado{
+  background-color: #0f90dc;
+}
+.desclicado{
+  background-color: rgb(60, 70, 37);
+}
 </style>
         <template> 
           <container>
@@ -172,10 +179,10 @@ input[type=checkbox].purple:checked::before {
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">18%</b>
                     <img style="width: 30%;" :src="'../../storage/img/25.png'">
-                  </div>
+                  </div> -->
                   <div class="pergunta">
                     Qual carne <b>não pode
                     faltar</b> na sua alimentação?
@@ -185,7 +192,7 @@ input[type=checkbox].purple:checked::before {
                         <form >
                           
                           <div class = "botao-comida" id="btn_frango" for="frango" >
-                            <label for="franco" style="width: 100%;">
+                            <label class="container" for="franco" style="width: 100%;">
                               <img class="logo" for="franco" style="width: 10%;" :src="'../../storage/img/FRANGO.png'">
                               FRANGO
                               <div style="float: right;"><input type="checkbox" id="franco" value="franco"  v-model="checkedNames"></div>
@@ -234,15 +241,15 @@ input[type=checkbox].purple:checked::before {
                              
                           </div><br>
                               <div class="todo">
-                                <div style="text-align: center;position: relative;padding-left: 70%;"> 
-                                    <button type="button" @click="store(checkedNames)" class="btn  btn-lg " >AVANÇAR</button><br><br>
+                                <div class="btn-avancar"> 
+                                    <button type="button" @click="store(checkedNames)" class="btn" >AVANÇAR</button><br><br>
                                 </div>
                                 <input type="hidden"  id="check" value="{{ checkedNames }}"/>
                      
                               </div>
                         </form>
                         <br>
-                        <span>Selecionados: {{ checkedNames }}</span>
+                        <!-- <span>Selecionados: {{ checkedNames }}</span> -->
                       </div>
                      
                   </div>
@@ -253,6 +260,24 @@ input[type=checkbox].purple:checked::before {
 </template>
 
 <script lang="ts">
+
+$(document).ready(function() {
+   
+  $('.botao-comida').change(function() {
+
+    if($(this).hasClass('clicado')){
+
+      $(this).addClass('desclicado');
+      $(this).removeClass('clicado');
+
+    }else{
+      $(this).addClass('clicado');
+      $(this).removeClass('desclicado');
+
+    }
+  });
+
+ });
 
 import { defineComponent } from 'vue'
 

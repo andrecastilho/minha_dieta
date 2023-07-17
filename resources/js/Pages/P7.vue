@@ -1,4 +1,11 @@
 <style scoped>
+@media only screen and (max-device-width: 600px) {
+
+.pergunta{
+  font-size: 20px;
+}
+
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -28,6 +35,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -47,10 +55,9 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
 }
 .avancar{
-  padding-left: 65%;
+  padding-left: 0rem;
 }
 
 </style>
@@ -62,7 +69,7 @@
               </div>
             </div>
                 <div class="corpo">
-                  <div style="width: 100%;padding-left: 0% ;padding-top: 2%;background-color:#717850;">
+                  <div style="top: -2rem;width: 100%;padding-left: 0% ;padding-top: 2%;background-color:#717850;">
                         <img style="padding-left: 2%; width: 37%;" :src="'../storage/img/CALORIAS.png'" alt="">
                 </div>
                  

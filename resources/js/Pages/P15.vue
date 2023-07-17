@@ -1,12 +1,23 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {
+.btn{
+     width: 8rem !important;
+    position: relative;
 
+    left: 11rem;
+}
+.botao{
+  position: relative !important;
+  left: -5rem !important;
+
+}
   .avancar{
     width: 120%;
     word-wrap: none;
   }
 .grafico{
   width: 85% !important;
+  left: 0% !important;
 }
 
 }
@@ -39,6 +50,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -71,10 +83,23 @@
 .grafico{
   width: 50%;
   background-color: black;
+  left: 15rem;
+  position: relative;
 }
 .avancar{
  
   padding-left: 86%;
+}
+.grafico1{
+  width: 60%;
+}
+.botao{
+  position: relative;
+  width: 8rem;
+  left: 25rem;
+  top: 2rem;
+  text-align: center;
+  position: relative;
 }
 </style>
         <template> 
@@ -87,7 +112,7 @@
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo" style="">
                   <div class="grafico">
-                    <svg style="width: 50%;" class="h-full w-full rounded-lg shadow-card rtl:-scale-x-100" viewBox="0 0 404 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg style="width: 60%;" class="grafico1" viewBox="0 0 404 366" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="blood-sugar">
                     <path id="card-bgr" d="M392 -6.10352e-05H12C5.37258 -6.10352e-05 0 5.37253 0 11.9999V354C0 360.627 5.37258 366 12 366H392C398.627 366 404 360.627 404 354V11.9999C404 5.37252 398.627 -6.10352e-05 392 -6.10352e-05Z" fill="var(--delta)"></path>
                     <g id="chart">
@@ -158,7 +183,7 @@
       </div>
                    
             <div class="todo">
-              <div style="text-align: center;position: relative;padding-left: 86%;"> 
+              <div class="botao"> 
                   <button type="button" @click="store(checkedNames)" class="btn  btn-lg " >AVANÇAR</button><br><br>
               </div>
               <input type="hidden"  id="check" value="{{ checkedNames }}"/>

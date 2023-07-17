@@ -25,12 +25,16 @@ class DoadoresController extends Controller
 
     public function saveHome(Request $request)
     {
+        if(array_keys($_GET)=='sexo'){
         $inserir = $_GET;
         $inserir["id"] = "";
         $inserir["tokenable_id"] = md5(microtime(true));
         Respostas::updateOrCreate($inserir);
         
         return Inertia::render('P1');
+        }else{
+            return Inertia::render('P1');
+        }
     }
 
     
@@ -45,10 +49,17 @@ class DoadoresController extends Controller
         $respostas->email = $request->all()['email'];
         $respostas->save();
       
-        return Inertia::render('P30');
+        return Inertia::render('Loading',[
+                            'idade' =>   $respostas->idade,
+                            'peso' =>   $respostas->peso,
+                            'altura' =>   $respostas->altura,
+                            'peso_desejado' =>   $respostas->peso_desejado,
+                 
+            ]);
     }
     public function saveP(Request $request)
     {
+        //dd($request->all());
         
         $p = $request['p'];
                

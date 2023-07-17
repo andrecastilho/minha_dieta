@@ -28,6 +28,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -65,10 +66,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">100%</b>
                     <img style="width: 30%;" :src="'../../storage/img/100.png'">
-                  </div>
+                  </div> -->
                   <div class="pergunta">
                     Em que parte do corpo você quer se concentrar durante o processo de perda de peso?
                   </div>

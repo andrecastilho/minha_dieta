@@ -28,6 +28,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -66,10 +67,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">60%</b>
                     <img style="width: 30%;" :src="'../../storage/img/50.png'">
-                  </div>
+                  </div> -->
                   <div class="pergunta">
                     Com que frequência <B>você come fora de casa durante a semana?</B>
                   </div>

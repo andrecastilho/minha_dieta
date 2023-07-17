@@ -89,13 +89,13 @@
                
               
                <div class="corpo">
-                <div class="balao">
+                <!-- <div class="balao">
                 <div class="drop">
                   <div style="padding-left: 50%; transform: rotate(90deg); color: white;">
                     7%
                   </div>
                 </div>
-              </div>
+              </div> -->
 
                   <div style=" float: right;; padding-right: 48%;margin-top: -8.8%;">
                

@@ -1,4 +1,13 @@
 <style scoped>
+@media only screen and (max-device-width: 600px) {
+
+  .btn{
+    width: 7.5rem;
+    left: 7rem;
+    position: relative;
+  }
+
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -45,9 +54,8 @@
  button{
   color: white;
   background-color: rgb(60, 70, 37);
-  text-align: left;
+  text-align: center;
   font-size: large;
-  width: 100%;
 }
 
 </style>
@@ -76,7 +84,7 @@
                   </div>
                   <div class="todo">
                       <div class="resposta">
-                        <div style="text-align: center;position: relative;padding-left: 78%;"> 
+                        <div style="left:-15rem;text-align: center;position: relative;padding-left: 78%;"> 
                           <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > AVANÇAR</button><br><br>
                         </div>
                        

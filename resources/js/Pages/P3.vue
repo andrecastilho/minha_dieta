@@ -35,6 +35,7 @@
   font-size: large;
   height: 100%;
   padding: 10%;
+  height: 72rem;
 
 }
 
@@ -89,14 +90,14 @@
               </div>
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
-
+<!-- 
                <div class="balao">
                 <div class="drop">
                   <div style="padding-left: 50%; transform: rotate(90deg); color: white;">
                     6%
                   </div>
                 </div>
-              </div>
+              </div> -->
             
                 <div class="corpo">
                     <div class="pergunta">

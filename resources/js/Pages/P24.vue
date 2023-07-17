@@ -28,6 +28,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -65,10 +66,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">85%</b>
                     <img style="width: 30%;" :src="'../../storage/img/75.png'">
-                  </div>
+                  </div> -->
                   <div class="pergunta">
                     Quanta <b>água você bebe diariamente?</b>
                   </div>

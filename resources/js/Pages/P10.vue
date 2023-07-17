@@ -1,8 +1,13 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {
 
+  .btn{
+    position: relative !important;
+    left: -3.5rem;
+    width: 8rem;
+  }
 .botao-comida{
-  
+  width: 9rem;
   padding: 29% !important;
   word-wrap: break-word;
 }
@@ -164,8 +169,27 @@ input[type=checkbox].purple:checked::before {
 .botao-comida{
   background-color: rgb(60, 70, 37);
   text-align: left;
-  border-radius: 20px 20px 30px 5px;
-  padding: 1%;
+  border-radius: 40px;
+  padding: 2%;
+}
+.btn{
+  color: white;
+    background-color: rgb(60, 70, 37);
+    /* text-align: left; */
+    font-size: large;
+    position: relative;
+    /* width: 100%; */
+    right: 9rem;
+}
+
+.botao-comida:active{
+  background-color: #0f90dc !important;
+}
+.clicado{
+  background-color: #0f90dc;
+}
+.desclicado{
+  background-color: rgb(60, 70, 37);
 }
 
 </style>
@@ -178,10 +202,10 @@ input[type=checkbox].purple:checked::before {
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">18%</b>
                     <img style="width: 30%;" :src="'../../storage/img/25.png'">
-                  </div>
+                  </div> -->
                   <div class="pergunta">
                     Qual carne <b>não pode
                     faltar</b> na sua alimentação?
@@ -260,7 +284,7 @@ input[type=checkbox].purple:checked::before {
                               </div>
                         </form>
                         <br>
-                        <span>Selecionados: {{ checkedNames }}</span>
+                        <!-- <span>Selecionados: {{ checkedNames }}</span> -->
                       </div>
                      
                   </div>
@@ -271,6 +295,24 @@ input[type=checkbox].purple:checked::before {
 </template>
 
 <script lang="ts">
+
+$(document).ready(function() {
+   
+   $('.botao-comida').change(function() {
+ 
+     if($(this).hasClass('clicado')){
+ 
+       $(this).addClass('desclicado');
+       $(this).removeClass('clicado');
+ 
+     }else{
+       $(this).addClass('clicado');
+       $(this).removeClass('desclicado');
+ 
+     }
+   });
+ 
+  });
 
 import { defineComponent } from 'vue'
 

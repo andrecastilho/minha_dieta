@@ -21,13 +21,15 @@
 
 .corpo{
   font-family: 'Montserrat';
-  background-color: #717850;
-  color: antiquewhite;
-  text-align: center;
-  font-size: large;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 19%;
+    background-color: #717850;
+    color: antiquewhite;
+    text-align: center;
+    /* font-size: large; */
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    /* padding-bottom: 19%; */
+    position: relative;
+    height: 72rem;
 }
 
 .pergunta{
@@ -65,10 +67,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">55%</b>
                     <img style="width: 30%;" :src="'../../storage/img/50.png'">
-                  </div>
+                  </div> -->
                 
                   <div class="pergunta">
                         <b>Você costuma comer por impulso </b>emocional?

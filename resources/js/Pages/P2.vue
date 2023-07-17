@@ -88,13 +88,13 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
 
-              <div class="balao">
+              <!-- <div class="balao">
                 <div class="drop">
                   <div style="padding-left: 50%; transform: rotate(90deg);color: white;">
                     2%
                   </div>
                 </div>
-              </div>
+              </div> -->
              
                 <div class="corpo">
                     <div class="pergunta">

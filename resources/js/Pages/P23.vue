@@ -1,4 +1,18 @@
 <style scoped>
+@media only screen and (max-device-width: 600px) {
+
+  .btn{
+    text-align: center;
+    width: 10rem !important;
+    POSITION: relative;
+    left:-2rem;
+
+}
+  .botao-comida{
+    width: 13rem !important;
+  }
+
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -28,7 +42,6 @@
   padding-left: 18%;
     padding-right: 147px;
 }
-
 .pergunta{
   padding: 6%;
   font-size: 28px;
@@ -132,28 +145,26 @@ input[type=checkbox]:disabled::after {
      background-color: #dcd8d8 !important;
 }
 
-/*OUTRAS CORES = Cores alternativas*/
 
-input[type=checkbox].red:checked::before {
-     background-color: #fd4554;
-}
-
-input[type=checkbox].blue:checked::before {
-     background-color: #0f90dc;
-}
-
-input[type=checkbox].red:checked::before {
-     background-color: #fd4554;
-}
-
-input[type=checkbox].purple:checked::before {
-     background-color: #9e3eff;
-}
 .botao-comida{
   background-color: rgb(60, 70, 37);
   text-align: left;
-  border-radius: 20px 20px 30px 5px;
-  padding: 2%;
+  border-radius: 40px;
+  padding: 3%;
+  width: 26rem;
+}
+.btn{
+  position: relative;
+  right: 9rem;
+}
+.botao-comida:active{
+  background-color: #0f90dc !important;
+}
+.clicado{
+  background-color: #0f90dc;
+}
+.desclicado{
+  background-color: rgb(60, 70, 37);
 }
 </style>
         <template> 
@@ -165,10 +176,10 @@ input[type=checkbox].purple:checked::before {
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">18%</b>
                     <img style="width: 30%;" :src="'../../storage/img/25.png'">
-                  </div>
+                  </div> -->
                   <div class="pergunta">
                   O que você bebe <b>durante o dia?</b>
                   </div>
@@ -230,7 +241,7 @@ input[type=checkbox].purple:checked::before {
                               </div>
                         </form>
                         <br>
-                        <span>Selecionados: {{ checkedNames }}</span>
+                        <!-- <span>Selecionados: {{ checkedNames }}</span> -->
                       </div>
                      
                   </div>
@@ -241,6 +252,24 @@ input[type=checkbox].purple:checked::before {
 </template>
 
 <script lang="ts">
+
+$(document).ready(function() {
+   
+   $('.botao-comida').change(function() {
+ 
+     if($(this).hasClass('clicado')){
+ 
+       $(this).addClass('desclicado');
+       $(this).removeClass('clicado');
+ 
+     }else{
+       $(this).addClass('clicado');
+       $(this).removeClass('desclicado');
+ 
+     }
+   });
+ 
+  });
 
 import { defineComponent } from 'vue'
 

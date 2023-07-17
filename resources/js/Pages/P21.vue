@@ -1,4 +1,24 @@
 <style scoped>
+
+@media only screen and (max-device-width: 750px) {
+
+  .meiaporcento{
+    position: relative;
+    right:13rem !important ;
+  }
+  .porcento{
+    position: relative;
+    top: 15rem !important;
+    left: 13rem;
+  }
+
+  .btn{
+    position: relative;
+    left: 7rem !important;
+  }
+
+
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -28,6 +48,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -47,7 +68,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  left: 10rem;
 }
 .porcentagem{
   width: 100%;
@@ -60,6 +81,13 @@
   position: absolute; 
   top:46%;
   right: 44%;
+}
+.meiaporcento{
+  display:flex;
+  position: absolute;  
+  top:25%;  
+  right: 35%;
+  width: 30%;
 }
 </style>
         <template> 
@@ -74,7 +102,7 @@
                   <div style="text-align: center;">
                     
 
-<div style="display:flex;position: absolute;  top:25%;  right: 35%;width: 30%;">
+<div style="" class="meiaporcento">
   67% dos restaurantes oferecem opções no seu menu
 </div>
 
@@ -122,10 +150,6 @@
 </linearGradient>
 </defs>
 </svg>
-
-
-
-
                  </div>
                   <div class="pergunta">
                     <b>A dieta Cetogênica não requer que
@@ -136,14 +160,12 @@
                   </div>
                   <div class="todo">
                       <div class="resposta">
-                        <div style="text-align: center;position: relative;padding-left: 80%;"> 
-                          <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > Avançar</button><br><br>
+                        <div style="text-align: center;position: relative;padding-left: 80%;left: -15rem;"> 
+                          <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " style="width: 7rem;" > Avançar</button><br><br>
                         </div>
                       </div>
                   </div>
               </div>
-                   
-           
          </container>
 </template>
 

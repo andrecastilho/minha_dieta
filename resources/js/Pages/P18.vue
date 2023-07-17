@@ -4,6 +4,11 @@
 .avancar{
   width: 130%;
   word-wrap: none;
+  left: -0rem;
+}
+.btn{
+  position: relative;
+  left: 7rem;
 }
 }
 .avancar{
@@ -39,6 +44,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -152,7 +158,7 @@
                   </div>
                   <div class="todo">
                       <div class="resposta">
-                        <div class="avancar" style="text-align: center;position: relative;padding-left: 80%;"> 
+                        <div class="avancar" style="left:-15rem;text-align: center;position: relative;padding-left: 80%;"> 
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > Avançar</button><br><br>
                         </div>
                       </div>

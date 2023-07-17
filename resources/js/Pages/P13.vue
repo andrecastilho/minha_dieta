@@ -28,6 +28,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 19%;
+  height: 72rem;
 }
 
 .pergunta{
@@ -37,6 +38,7 @@
 
 .todo{
   width: 100%;
+  height: 41rem;
 }
 .resposta{
   padding-left: 20%;
@@ -65,10 +67,10 @@
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
-                  <div class="porcentagem">
+                  <!-- <div class="porcentagem">
                     <b style="color: white;">27%</b>
                     <img style="width: 30%;" :src="'../../storage/img/50.png'">
-                  </div>
+                  </div> -->
                   <div class="pergunta">
                     Com que frequência você <b>se estressa?</b>
                   </div>
@@ -77,7 +79,7 @@
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > ÀS VEZES</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > NUNCA</button><br><br>
                         <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > FREQUENTIMENTE</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >QUESE SEMPRE</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >QUASE   SEMPRE</button><br><br>
                       </div>
                   </div>
               </div>

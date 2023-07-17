@@ -90,13 +90,13 @@
             
 
                <div class="corpo">
-                <div class="balao">
+                <!-- <div class="balao">
                 <div class="drop">
                   <div style="padding-left: 50%; transform: rotate(90deg);">
                     8%
                   </div>
                 </div>
-              </div>
+              </div> -->
 
                   <div class="pergunta">
                     Você <b>se preocupa com a quantidade
