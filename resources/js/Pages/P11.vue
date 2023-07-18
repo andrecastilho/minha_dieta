@@ -28,11 +28,10 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
-  height: 72rem;
+  height: 40rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -74,6 +73,7 @@
                     <div class="pergunta">
                       Como é o seu dia a dia normal?
                     </div>
+                    <br>
                   <div class="todo">
                       <div class="resposta">
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >NO ESCRITÓRIO</button><br><br>

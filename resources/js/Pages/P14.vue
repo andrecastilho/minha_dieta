@@ -28,11 +28,11 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 19%;
-  height: 72rem;
+  height: 40rem;
+  padding-top: 2rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -73,6 +73,7 @@
                   <div class="pergunta">
                     <b>Os níveis de açúcar</b> em seu sangue estão normais?
                   </div>
+                  <br>
                   <div class="todo">
                    
                       <div class="resposta">

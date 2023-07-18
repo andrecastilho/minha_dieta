@@ -1,6 +1,9 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {
-
+  span{
+  left: 2.5rem !important;
+    position: relative !important;
+}
 .btn{
   width: 7.5rem;
 }
@@ -33,11 +36,11 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
-  height: 72rem;
+  height: 40rem;
+  padding-top: 2rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -67,6 +70,7 @@ span{
             </div>
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
+
                   <div class="pergunta">
                     <b>Medidas</b>
                   </div>

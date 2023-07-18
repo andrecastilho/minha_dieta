@@ -33,13 +33,12 @@
   color: antiquewhite;
   text-align: center;
   font-size: large;
-  height: 100%;
+  height:70rem;
   padding: 5%;
  
 }
 
 .pergunta{
-  padding: 6%;
   font-size: 28px;
 }
 

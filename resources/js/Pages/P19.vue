@@ -29,11 +29,11 @@
     /* padding-right: 5%; */
     /* padding-bottom: 19%; */
     position: relative;
-    height: 72rem;
+    height: 40rem;
+    padding-top: 2rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -75,6 +75,7 @@
                   <div class="pergunta">
                         <b>Você costuma comer por impulso </b>emocional?
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >SIM, MUITO</button><br><br>

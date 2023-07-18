@@ -44,10 +44,10 @@
   font-size: large;
   padding-left: 18%;
     padding-right: 147px;
+    padding-top: 2rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -191,7 +191,10 @@ input[type=checkbox].purple:checked::before {
 .desclicado{
   background-color: rgb(60, 70, 37);
 }
+input[type=checkbox]{
+  display: none;
 
+}
 </style>
         <template> 
           <container>
@@ -210,6 +213,7 @@ input[type=checkbox].purple:checked::before {
                     Qual carne <b>não pode
                     faltar</b> na sua alimentação?
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <form >

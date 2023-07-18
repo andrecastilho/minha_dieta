@@ -31,8 +31,7 @@
   height: 72rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -73,6 +72,7 @@
                   <div class="pergunta">
                     Em que parte do corpo você quer se concentrar durante o processo de perda de peso?
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         

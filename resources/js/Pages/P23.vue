@@ -41,9 +41,10 @@
   font-size: large;
   padding-left: 18%;
     padding-right: 147px;
+    padding-top: 2rem;
+    height: 70rem;
 }
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -166,6 +167,10 @@ input[type=checkbox]:disabled::after {
 .desclicado{
   background-color: rgb(60, 70, 37);
 }
+input[type=checkbox]{
+  display: none;
+
+}
 </style>
         <template> 
           <container>
@@ -183,6 +188,7 @@ input[type=checkbox]:disabled::after {
                   <div class="pergunta">
                   O que você bebe <b>durante o dia?</b>
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <form >

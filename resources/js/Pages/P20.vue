@@ -27,12 +27,11 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 9%;
-  height: 72rem;
+  padding-top: 2rem;
+  height: 40rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -74,6 +73,7 @@
                   <div class="pergunta">
                     Com que frequência <B>você come fora de casa durante a semana?</B>
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > DIARIAMENTE</button><br><br>

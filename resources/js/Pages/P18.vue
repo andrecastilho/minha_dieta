@@ -1,6 +1,8 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {
-
+.contain{
+  display: none !important;
+}
 .avancar{
   width: 130%;
   word-wrap: none;
@@ -47,8 +49,7 @@
   height: 72rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -74,7 +75,7 @@
 }
 .contain {
   display: flex;
-  padding-top: 2%;
+  padding-top: 0%;
 }
 .contain > div {
   flex: 1; /*grow*/
@@ -145,7 +146,7 @@
                   <div style="padding-right: 28%;">Mantendo o estilo</div>
                 </div>
 
-
+<br>
                   <div class="pergunta">
                     A dieta Cetogênica é um método
                     comprovado na redução do apetite.
@@ -156,6 +157,7 @@
                     calculadas o irão manter satisfeito
                     durante o dia.
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <div class="avancar" style="left:-15rem;text-align: center;position: relative;padding-left: 80%;"> 

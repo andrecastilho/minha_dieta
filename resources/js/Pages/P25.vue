@@ -36,11 +36,10 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 9%;
+  height: 40rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -72,7 +71,7 @@
                   <div style="text-align: center;padding-top: 5%;">
                 <img style="width: 40%;" class="logo" :src="'../../storage/img/copos-agua.png'">
               </div>
-                  
+                  <br>
                   <div class="pergunta">
                   A maioria das pessoas obteve
                   resultados ainda melhores combinando
@@ -82,6 +81,7 @@
                   pessoal de água diária durante a sua
                   transformação Cetogênica.
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <div style="left:-15rem;text-align: center;position: relative;padding-left: 78%;"> 

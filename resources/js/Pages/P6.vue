@@ -35,10 +35,10 @@
   font-size: large;
   height: 100%;
   padding: 5%;
+  height: 50rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 

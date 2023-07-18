@@ -1,5 +1,8 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {
+  .contain{
+    font-size: 1rem !important;
+  }
 .btn{
      width: 8rem !important;
     position: relative;
@@ -17,7 +20,7 @@
   }
 .grafico{
   width: 85% !important;
-  left: 0% !important;
+  left: 2rem !important;
 }
 
 }
@@ -50,11 +53,10 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
-  height: 72rem;
+  height: 70rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 

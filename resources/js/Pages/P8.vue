@@ -43,11 +43,12 @@
   font-size: large;
   padding-left: 18%;
     padding-right: 147px;
+    height: 50rem;
 }
 
 .pergunta{
-  padding: 6%;
-  font-size: 28px;
+  padding: 2%;
+  font-size: 20px;
 }
 
 .todo{
@@ -168,6 +169,10 @@ input[type=checkbox]:disabled::after {
 }
 .desclicado{
   background-color: rgb(60, 70, 37);
+}
+input[type=checkbox]{
+  display: none;
+
 }
 </style>
         <template> 

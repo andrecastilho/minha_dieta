@@ -28,14 +28,14 @@
 
 .corpo{
   font-family: 'Montserrat';
-  background-color: #717850;
-  color: antiquewhite;
-  text-align: center;
-  font-size: large;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 9%;
-  height: 72rem;
+    background-color: #717850;
+    color: antiquewhite;
+    text-align: center;
+    font-size: large;
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    /* padding-top: 9%; */
+    height: 45rem;
 }
 
 .pergunta{

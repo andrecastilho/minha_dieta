@@ -28,11 +28,11 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 19%;
-  height: 72rem;
+  height: 40rem;
+  padding-top: 2rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -73,6 +73,7 @@
                   <div class="pergunta">
                     Qual o <b>nível dos seus dotes culinários?</b>
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > NÃO SEI COZINHAR</button><br><br>

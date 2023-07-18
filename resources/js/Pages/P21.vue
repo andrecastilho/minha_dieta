@@ -51,8 +51,7 @@
   height: 72rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -151,6 +150,7 @@
 </defs>
 </svg>
                  </div>
+                 <br>
                   <div class="pergunta">
                     <b>A dieta Cetogênica não requer que
                     você prepare todas as suas refeições
@@ -158,6 +158,7 @@
                     encontra num restaurante local, ou
                     até mesmo no supermercado.
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <div style="text-align: center;position: relative;padding-left: 80%;left: -15rem;"> 

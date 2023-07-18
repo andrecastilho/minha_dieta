@@ -40,7 +40,6 @@
 }
 
 .pergunta{
-  padding: 6%;
   font-size: 28px;
 }
 

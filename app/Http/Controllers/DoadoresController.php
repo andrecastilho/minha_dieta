@@ -57,6 +57,21 @@ class DoadoresController extends Controller
                  
             ]);
     }
+
+    public function redirectVendas(Request $request)
+    {
+        $respostas = Respostas::firstOrNew(['id' =>  $_COOKIE['id']]);
+      
+      dd($request);
+        return Inertia::render('P30',[
+                            'idade' =>   $respostas->idade,
+                            'peso' =>   $respostas->peso,
+                            'altura' =>   $respostas->altura,
+                            'peso_desejado' =>   $respostas->peso_desejado,
+                 
+            ]);
+    }
+
     public function saveP(Request $request)
     {
         //dd($request->all());

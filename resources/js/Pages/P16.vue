@@ -49,10 +49,10 @@
   font-size: large;
   padding-left: 18%;
     padding-right: 147px;
+    padding-top: 2rem;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
@@ -194,6 +194,10 @@ input[type=checkbox].purple:checked::before {
 .desclicado{
   background-color: rgb(60, 70, 37);
 }
+input[type=checkbox]{
+  display: none;
+
+}
 </style>
         <template> 
           <container>
@@ -211,6 +215,7 @@ input[type=checkbox].purple:checked::before {
                   <div class="pergunta">
                     Escolha a opção que <b>mais tem a ver com você</b>
                   </div>
+                  <br>
                   <div class="todo">
                       <div class="resposta">
                         <form >
@@ -279,8 +284,6 @@ input[type=checkbox].purple:checked::before {
                      
                   </div>
               </div>
-                   
-           
          </container>
 </template>
 

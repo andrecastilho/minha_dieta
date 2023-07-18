@@ -13,6 +13,27 @@
 
 @media only screen and (max-device-width: 750px) {
 
+  .bloco-jornais{
+    left: -11rem !important;
+    width: 45rem !important;
+}
+  .btn-comece-agora{
+    width: 10rem !important;
+    position: relative;
+    left: 1rem;
+    color: #333 !important;
+  }
+  .o_que_e_citogenica{
+    top:0rem;
+  }
+  .painel-duplo{
+    display: flex;
+    position: relative !important;
+    bottom: 1rem !important;
+  }
+  .btn-vertical{
+    width: 22rem !important;
+  }
   .textos{
   background-color: #fff !important;
 }
@@ -20,7 +41,10 @@
     display: none;
   }
   .junte-se{
-    font-size: 10%;
+    position: relative !important;
+    right: 11rem !important;
+    padding: 0rem !important;
+    left: 2rem !important;
   }
   .o_que_e_citogenica{
     padding-top: 2rem !important;
@@ -29,9 +53,11 @@
     position: absolute;
     font-size: 0.8rem !important;
     font-weight: bold;
+    width: 13rem !important;
   }
   .mulher-homen{
     position: unset !important;
+    background-color: white;
   }
   .homem{
     font-size: 57% !important;
@@ -50,9 +76,21 @@
   }
   .oque-vai-receber{
     width: 100% !important;
+    margin: 0.5rem;
+  }
+  .btn{
+        /* width: 14rem !IMPORTANT;
+    left: 7rem;
+    position: relative; */
   }
 }
 
+
+.bloco-jornais{
+    position: relative ;
+    left: -2rem ;
+    width: 70rem;
+}
 .btn{
   width: 40rem;
 }
@@ -101,6 +139,7 @@ container {
   left: 5%;
   top: 135px;
   color: rgb(60, 60, 03);
+  width: 30rem;
 }
 
 #textoImagem2 {
@@ -171,7 +210,7 @@ d {
   text-align: center;
   font-family: 'Montserrat';
   font-size: 2rem;
-  left: 3rem;
+  left: 6rem;
 }
 
 .prato2 {
@@ -190,6 +229,8 @@ d {
   width: 24%;
   text-align: center;
   margin: 10%;
+  color: #333;
+  
 }
 
 .botao-comece-agora {
@@ -351,6 +392,78 @@ display: flex;
 .img_prato2{
   width: 37rem;
 }
+
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: black;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: red;
+}
+.btn-white2::after {
+    background-color: blue;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.btn-vertical{
+  position: relative;
+  left: 0.5rem;
+}
+
 </style>
 <template>
   <container>
@@ -380,18 +493,19 @@ display: flex;
           <img class="d-block w-100" :src="'../storage/img/PRATO.jpg'" alt="">
         </div>
         <div class="textos">
-          <a id="textoImagem1" style="font-family: 'Montserrat';">Faça Um Teste de Um Minuto para Criar<br>
-            <br>Sua Dieta Cetogênica Personalizada </a>
-          <br><br>
+          <a id="textoImagem1" style="font-family: 'Montserrat';">
+            Faça Um Teste de Um Minuto para Criar
+            Sua Dieta Cetogênica Personalizada </a>
+          
         </div>
 
         <div class="mulher-homen">
           <div class="mulher">
-            <a class="btn btn-primary btn-lg " style="width: 8rem;" href="p/?sexo=mulher" id="mulher" role="button" aria-pressed="true"><img
+            <a class="btn btn-primary btn-lg btn-white" style="width: 8rem;" href="p/?sexo=mulher" id="mulher" role="button" aria-pressed="true"><img
                 style="float:right;width: 15%; ;" :src="'../storage/img/MULHER.png'" alt="homem"> Mulher </a>
           </div>
-          <div class="homem">
-            <a class="btn btn-primary btn-lg " style="width: 8rem;" href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
+          <div class="homem btn-white">
+            <a class="btn btn-primary btn-lg btn-white2" style="color:blue;width: 8rem;" href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
                 style="float:right;width: 18%; ;" :src="'../storage/img/HOMEM.png'" alt="homem">Homem</a>
           </div>
         </div>
@@ -405,31 +519,31 @@ display: flex;
         </div>
         <div class="todo-plano">
           <div class="plano">
-            <button type="button" class="btn  btn-lg ">
+            <button type="button" class="btn-vertical  btn  btn-lg ">
               <div style="float: left;"><span><b>01</b></span> </div>
               <div style="text-align: right;padding-top: 10px;;">
                 <d>Perﬁl de dieta instantâneo gratuito</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg ">
+            <button type="button" class="btn  btn-lg btn-vertical ">
               <div style="float: left;"><span><b>02</b></span> </div>
               <div style="text-align: right;padding-top: 10px;;">
                 <d>Plano alimentar super rápido</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg ">
+            <button type="button" class="btn  btn-lg btn-vertical ">
               <div style="float: left;"><span><b>03</b></span> </div>
               <div style="text-align: right;padding-top: 10px;;">
                 <d>Desenhado exclusivo pra você</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg ">
+            <button type="button" class="btn  btn-lg btn-vertical ">
               <div style="float: left;"><span><b>04</b></span> </div>
               <div style="text-align: right;padding-top: 10px;;">
                 <d>Uma assinatura para grandes resultados</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg ">
+            <button type="button" class="btn  btn-lg btn-vertical ">
               <div style="float: left;"><span><b>05</b></span> </div>
               <div style="text-align: right;padding-top: 12px;;">
                 <d>Guia deﬁnitivo para dieta cetogênica</d>
@@ -438,7 +552,7 @@ display: flex;
           </div>
         </div>
 
-        <div style="position: relative; left: 4rem;">
+        <div class="bloco-jornais" >
           <img class="jornais" :src="'../storage/img2/JORNAIS.png'">
         </div>
         <br>
@@ -491,7 +605,7 @@ display: flex;
         </div>
 
         <div class="botao-comece-agora">
-          <button type="button" class="btn-comece-agora">Comece Agora</button>
+          <button type="button" class="btn-comece-agora btn-white">Comece Agora</button>
         </div>
       </div>
     </div>

@@ -30,8 +30,7 @@
   padding-top: 9%;
 }
 
-.pergunta{
-  padding: 6%;
+.pergunt{
   font-size: 28px;
 }
 
