@@ -11,15 +11,7 @@ class DoadoresController extends Controller
 
     public function index()
     {
-            return Inertia::render('Home', [
-            'respostas' => Respostas ::all()
-                    ->transform(function($respostas) {
-                        return [
-                            'id' =>   $respostas->id,
-                        ];
-                    }
-                ),
-            ]);
+            return Inertia::render('Home');
     }
 
 
@@ -54,6 +46,7 @@ class DoadoresController extends Controller
                             'peso' =>   $respostas->peso,
                             'altura' =>   $respostas->altura,
                             'peso_desejado' =>   $respostas->peso_desejado,
+                            'sexo' =>   $respostas->sexo,
                  
             ]);
     }
@@ -62,12 +55,13 @@ class DoadoresController extends Controller
     {
         $respostas = Respostas::firstOrNew(['id' =>  $_COOKIE['id']]);
       
-      dd($request);
+      //dd($request);
         return Inertia::render('P30',[
                             'idade' =>   $respostas->idade,
                             'peso' =>   $respostas->peso,
                             'altura' =>   $respostas->altura,
                             'peso_desejado' =>   $respostas->peso_desejado,
+                            'sexo' =>   $respostas->sexo,
                  
             ]);
     }

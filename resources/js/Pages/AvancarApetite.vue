@@ -19,7 +19,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -64,11 +69,11 @@
                   </div>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > DE MANHÃ</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > AO MEIO-DIA</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > A TARDE</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >A NOITE</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >SINTO FOME A TODO MOMENTO</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" > DE MANHÃ</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > AO MEIO-DIA</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > A TARDE</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >A NOITE</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >SINTO FOME A TODO MOMENTO</button><br><br>
                       </div>
                   </div>
               </div>

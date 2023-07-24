@@ -1,6 +1,15 @@
 <style scoped>
 @media only screen and (max-device-width: 1000px)  {
 
+  .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+  }
+  button{
+    width: 13rem !important;
+    position: relative;
+  }
 .balao{
   
   margin-top: -13% !important;
@@ -27,7 +36,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -35,7 +49,7 @@
   font-size: large;
   height: 100%;
   padding: 5%;
-  height: 40rem;
+  height: 70rem;
 
 }
 
@@ -55,7 +69,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -107,10 +121,10 @@
                     Selecione a opção que melhor se aplica a você:<br><br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >ESTOU NO MEU PESO IDEAL AGORA</button><br><br>
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >MENOS DE UM ANO ATRÁS</button><br><br>
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >MAIS DE UM ANO ATRÁS</button><br><br>
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >NÃO CONSIGO ME LEMBRAR</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >ESTOU NO MEU PESO IDEAL AGORA</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >MENOS DE UM ANO ATRÁS</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >MAIS DE UM ANO ATRÁS</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >NÃO CONSIGO ME LEMBRAR</button><br><br>
                       </div>
                      
                   </div>

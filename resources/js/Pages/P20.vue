@@ -1,4 +1,10 @@
 <style scoped>
+@media only screen and (max-device-width: 750px) {
+button{
+  width:  12rem !important;
+}
+
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -19,7 +25,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -28,7 +39,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2rem;
-  height: 40rem;
+  height: 70rem;
 }
 
 .pergunt{
@@ -47,7 +58,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 
 .porcentagem{
@@ -76,11 +87,11 @@
                   <br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > DIARIAMENTE</button><br><br>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > 1 VEZ POR SEMANA</button><br><br>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > POUCAS VEZES POR MÊS</button><br><br>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > ARAMENTE</button><br><br>
-                  <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > NUNCA</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" > DIARIAMENTE</button><br><br>
+                  <button type="button" name="p1" id="p1" @click="store" class="botao" > 1 VEZ POR SEMANA</button><br><br>
+                  <button type="button" name="p1" id="p1" @click="store" class="botao" > POUCAS VEZES POR MÊS</button><br><br>
+                  <button type="button" name="p1" id="p1" @click="store" class="botao" > ARAMENTE</button><br><br>
+                  <button type="button" name="p1" id="p1" @click="store" class="botao" > NUNCA</button><br><br>
                       </div>
                   </div>
               </div>

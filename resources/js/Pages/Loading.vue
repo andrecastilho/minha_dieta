@@ -1,5 +1,40 @@
 
 <style scoped>
+@media screen and (max-width: 880px) {
+    .group_scrollingBanner {
+        height: 70rem !important;
+
+    }
+
+    .head {
+        width: 100% !important;
+    }
+
+    .load {
+        position: relative !important;
+        width: 10rem !important;
+        left: -30rem !important;
+        text-align: center !important;
+    }
+
+    .logo {
+        position: relative !important;
+        width: 40rem !important;
+        left: 23rem !important;
+        top: 3rem;
+    }
+
+    .group_scrollingBanner {
+        position: relative;
+        width: 50rem !important;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+        left: 0rem !important;
+    }
+
+}
+
 body {
     text-align: center;
     font-family: 'Comfortaa', cursive;
@@ -50,55 +85,114 @@ h1 {
     }
 }
 
+
 container {
-    background-color: red;
+    background-color: rgb(60, 70, 37);
     position: absolute;
-    width: 70%;
+    width: 100%;
+    height: 70rem;
 }
 
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+h2{
+    margin-top: -307px;
+}
+.group_scrollingBanner {
+    position: relative;
+    height: 20rem;
+    display: flex;
+    overflow: hidden;
+    left: 18rem;
+    padding-bottom: 2%;
+    bottom: 1rem;
+}
+
+.group_scrollingBanner div {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    left: 0rem;
+    border-radius: 20px;
+    height: 3rem;
+}
+
+
+
+.first_column h2 {
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: yellowgreen;
+    -webkit-text-fill-color: transparent blue;
+    left: 100%;
+}
+
+.phrase {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 2em;
+    line-height: 100vh;
+    color:yellowgreen;
+    animation: scroll 3s 1s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        background-color: yellowgreen;
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.logo {
+    position: relative;
+    width: 40rem;
+    left: 43.5rem;
+    top: 3rem;
+}
+
+.titulo {
+    position: relative;
+    text-align: center;
+    top: 5rem;
+    color: yellowgreen;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.load {
+    position: relative;
+    width: 10rem;
+    left: -30rem;
+    text-align: center;
+}
 </style>
 <template >
     <container>
-        <div class="head" >
-            <div style="text-align: center;">
-                <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
+        <div class="head">
+            <div class="lo">
+                <div class="titulo">Processando Plano Alimentar</div>
+                <div class="load">
+                    <img class="logo" :src="'../../storage/img/Load.gif'">
+                </div>
             </div>
+            <section class="group_scrollingBanner">
+                <div class="first_column">
+                    <h2 class="phrase">Processando informações... </h2>
+                </div>
+            </section>
         </div>
-        LOading.....dddd
-   
-        <!-- Loader 7 -->
-
-        <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-            <path fill="#fff" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
-  c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50"
-                    to="360 50 50" repeatCount="indefinite" />
-            </path>
-            <path fill="#fff" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
-  c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50"
-                    to="-360 50 50" repeatCount="indefinite" />
-            </path>
-            <path fill="#fff" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
-  L82,35.7z">
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50"
-                    to="360 50 50" repeatCount="indefinite" />
-            </path>
-        </svg>
-
-        
-
-        <!-- follow me template -->
-        <div class="made-with-love">
-            Made with
-            <i>♥</i> by
-            <a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
-        </div>
-{{ idade }}
-
-
-
     </container>
 </template>
 
@@ -106,54 +200,57 @@ container {
 
 
 
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
+
 
 const form = defineComponent({
-  p1: "P1",
+    p1: "P1",
 
 })
 
+let vm = this;
+
 export default defineComponent({
 
-  props: {
-    idade: String,
-    altura: String,
-    peso: String,
-    peso_desejado: String,
-    email: String,
-    sexo: String
-  },
-
-  data(props) {
-    return {
-      form: this.$inertia.form({
-        p1: false,
-        p: "P30",
-        idade: props.idade,
-        peso: props.peso,
-        altura: props.altura,
-        peso_desejado: props.peso_desejado,
-        email: props.email,
-        sexo: props.sexo
-
-      }),
-    }
-  },
-  methods: {
-
-  },
-  beforeMount() 
-  {
-        alert("oi");
-        setTimeout(function () {
-        
-            //return route("doadores.redirectVendas"); 
-            return this.$router.push({ path: 'vendas' })
-           // return route("doadores.redirectVendas");
-            //return route("doadores.redirectVendas"); 
-        }, 5000);
+    props: {
+        idade: String,
+        altura: String,
+        peso: String,
+        peso_desejado: String,
+        email: String,
+        sexo: String
     },
 
+    data(props) {
+        return {
+            form: this.$inertia.form({
+                p1: false,
+                p: "P30",
+                idade: props.idade,
+                peso: props.peso,
+                altura: props.altura,
+                peso_desejado: props.peso_desejado,
+                email: props.email,
+                sexo: props.sexo
+
+            }),
+        }
+    },
+    methods: {
+
+        chama(e) {
+
+            setTimeout(() => {
+                  this.form.post(route("doadores.redirectVendas"));
+            }, 6000);
+
+        },
+
+    },
+    beforeMount() {
+
+        this.chama();
+    },
 })
 
 </script>

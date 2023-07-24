@@ -1,6 +1,17 @@
 <style scoped>
-@media only screen and (max-device-width: 600px) {
-
+@media only screen and (max-device-width: 600px) {   
+  .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem !important;
+    width: 15rem !important;
+    text-align: center;
+    right: 7rem !important;
+  }
+.pergunta{
+  left: 2rem;
+    position: relative;
+}
   .btn{
     position: relative !important;
     left: -3.5rem;
@@ -36,7 +47,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -195,6 +211,12 @@ input[type=checkbox]{
   display: none;
 
 }
+.botao{
+  position: relative;
+  width: 15rem;
+  text-align: center;
+  right: 13rem;
+}
 </style>
         <template> 
           <container>
@@ -281,7 +303,7 @@ input[type=checkbox]{
 
                               <div class="todo">
                                 <div style="text-align: center;position: relative;padding-left: 70%;"> 
-                                    <button type="button" @click="store(checkedNames)" class="btn  btn-lg " >AVANÇAR</button><br><br>
+                                    <button type="button" @click="store(checkedNames)" class="botao" >AVANÇAR</button><br><br>
                                 </div>
                                 <input type="hidden"  id="check" value="{{ checkedNames }}"/>
                      

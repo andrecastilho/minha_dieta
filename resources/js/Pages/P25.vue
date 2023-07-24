@@ -1,10 +1,30 @@
 <style scoped>
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 600px) {   
+  .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+    left: 1rem;
+    width: 15rem;
+  }
 
+  .img{
+    width: 17rem !important;
+  }
+.corpo { 
+    position: relative;
+    height: 70rem !important;
+  }
   .btn{
     width: 7.5rem;
     left: 7rem;
     position: relative;
+  }
+  .pergunta{
+    position: relative !important;
+    left: 3rem !important;
+    font-size: 1rem;
+    width: 15rem !important;      
   }
 
 }
@@ -28,7 +48,14 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+  width: 20rem;
+  right: 5rem;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -36,7 +63,7 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
-  height: 40rem;
+  height: 150%;
 }
 
 .pergunt{
@@ -56,6 +83,11 @@
   text-align: center;
   font-size: large;
 }
+.pergunta{
+  position: relative;
+  width: 25rem;
+  left: 17rem;
+}
 
 </style>
         <template> 
@@ -68,8 +100,8 @@
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
                 <div class="corpo">
 
-                  <div style="text-align: center;padding-top: 5%;">
-                <img style="width: 40%;" class="logo" :src="'../../storage/img/copos-agua.png'">
+                  <div style="text-align: center;padding-top: 2%;">
+                <img style="width: 36%;" class="img" :src="'../../storage/img/GR├БFICO5.png'">
               </div>
                   <br>
                   <div class="pergunta">
@@ -85,7 +117,7 @@
                   <div class="todo">
                       <div class="resposta">
                         <div style="left:-15rem;text-align: center;position: relative;padding-left: 78%;"> 
-                          <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > AVANÇAR</button><br><br>
+                          <button type="button" name="p1" id="p1" @click="store" class="botao" > AVANÇAR</button><br><br>
                         </div>
                        
                       </div>

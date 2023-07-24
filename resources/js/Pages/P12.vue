@@ -1,4 +1,16 @@
 <style scoped>
+@media only screen and (max-device-width: 600px) {   .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+  }
+
+
+button{
+  width: 13rem !important;
+}
+}
+
 .head{
     text-align: right;
     padding: 0.5%;
@@ -19,7 +31,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -28,7 +45,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 19%;
-  height: 40rem;
+  height: 70rem;
   padding-top: 2rem;
 }
 
@@ -48,7 +65,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -76,10 +93,10 @@
                   <br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > MENOS DE 5 HORAS</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > 5 A 6 HORAS POR NOITE</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > 7 A 8 HORAS POR NOITE</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > Queijo MAIS DE 8 HORAS POR NOITE</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" > MENOS DE 5 HORAS</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > 5 A 6 HORAS POR NOITE</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > 7 A 8 HORAS POR NOITE</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > Queijo MAIS DE 8 HORAS POR NOITE</button><br><br>
                       </div>
                   </div>
               </div>

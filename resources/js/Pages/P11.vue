@@ -1,4 +1,15 @@
 <style scoped>
+@media only screen and (max-device-width: 600px) {   .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+  }
+
+
+button{
+  width: 13rem !important;
+}
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -19,16 +30,19 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
   text-align: center;
   font-size: large;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 9%;
-  height: 40rem;
+  padding-top: 2rem;
+  height: 70rem;
 }
 
 .pergunt{
@@ -47,7 +61,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -76,19 +90,19 @@
                     <br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >NO ESCRITÓRIO</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >NO ESCRITÓRIO</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >NO ESCRITÓRIO, MAS SAIO COM FREQUÊNCIA</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >NO ESCRITÓRIO, MAS SAIO COM FREQUÊNCIA</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " >PASSO A MAIOR PARTE DO DIA DE PÉ</button><br><br>
+                        <button type="button" name="p3" id="p3" @click="store" class="botao" >PASSO A MAIOR PARTE DO DIA DE PÉ</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p4" id="p4" @click="store" class="btn  btn-lg " >TRABALHO BRAÇAL</button><br><br>
+                        <button type="button" name="p4" id="p4" @click="store" class="botao" >TRABALHO BRAÇAL</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p5" id="p5" @click="store" class="btn  btn-lg " >PASSO A MAIOR PARTE DO DIA EM CASA</button><br><br>
+                        <button type="button" name="p5" id="p5" @click="store" class="botao" >PASSO A MAIOR PARTE DO DIA EM CASA</button><br><br>
                       </div>
                   </div>
               </div>

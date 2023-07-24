@@ -1,6 +1,14 @@
 <style scoped>
 @media only screen and (max-device-width: 900px) {
 
+  .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+  }
+  button{
+    width: 13rem !important;
+  }
 .balao{
   
   margin-top: -6% !important;
@@ -27,7 +35,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -54,7 +67,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -102,21 +115,21 @@
                     Selecione a opção que melhor se aplica a vocês:<br><br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >SIM! TENHO MUITO FOCO E ENERGIA</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >SIM! TENHO MUITO FOCO E ENERGIA</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >OS MEUS NÍVEIS DE ENERGIA DIMINUEM
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >OS MEUS NÍVEIS DE ENERGIA DIMINUEM
 DURANTE O DIA</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " >ME SINTO SEM ENERGIA E PREGUIÇOSO</button><br><br>
+                        <button type="button" name="p3" id="p3" @click="store" class="botao" >ME SINTO SEM ENERGIA E PREGUIÇOSO</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p4" id="p4" @click="store" class="btn  btn-lg " >ME DISTRAIO COM FACILIDADE MESMO
+                        <button type="button" name="p4" id="p4" @click="store" class="botao" >ME DISTRAIO COM FACILIDADE MESMO
 COM ENERGIA ALTA</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p5" id="p5" @click="store" class="btn  btn-lg " >EU ME EXERCITO DE 5 A 7 VEZES POR SEMANA</button><br><br>
+                        <button type="button" name="p5" id="p5" @click="store" class="botao" >EU ME EXERCITO DE 5 A 7 VEZES POR SEMANA</button><br><br>
                       </div>
                   </div>
               </div>

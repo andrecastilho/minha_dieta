@@ -1,5 +1,13 @@
 <style scoped>
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 600px) {   
+  .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+    width: 15rem;
+    text-align: center;
+    right: 6rem !important;
+  }
 .btn{
   width: 8rem;
     right: 3rem;
@@ -14,7 +22,10 @@
 .logo{
   width: 51% !important;
 }
-
+.pergunta{
+  left: 2rem;
+    position: relative;
+}
 }
 .head{
     text-align: right;
@@ -36,7 +47,16 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+  width: 15rem;
+  text-align: center;
+  right: 13rem;
+  
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -265,7 +285,7 @@ input[type=checkbox]{
 
                               <div class="todo">
                                 <div style="text-align: center;position: relative;padding-left: 70%;"> 
-                                    <button type="button" @click="store(checkedNames)" class="btn  btn-lg " >AVANÇAR</button><br><br>
+                                    <button type="button" @click="store(checkedNames)"   class="botao" >AVANÇAR</button><br><br>
                                 </div>
                                 <input type="hidden"  id="check" value="{{ checkedNames }}"/>
                      

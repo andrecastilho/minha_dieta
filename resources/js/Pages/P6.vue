@@ -1,6 +1,15 @@
 <style scoped>
 @media only screen and (max-device-width: 900px) {
 
+  .botao{
+    position: relative !important;
+    height: 12rem !important;
+    padding: 0.5rem;
+  }
+  button{
+    width: 13rem !important;
+    position: relative;
+  }
 .balao{
   
   margin-top: -13% !important;
@@ -27,7 +36,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -35,7 +49,7 @@
   font-size: large;
   height: 100%;
   padding: 5%;
-  height: 50rem;
+  height: 70rem;
 }
 
 .pergunt{
@@ -54,7 +68,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -105,9 +119,9 @@
                   Selecione a opção que melhor se aplica a você:<br><br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >SIM! ME PREOCUPO E REGULO AQUANTIDADE DE CALORIAS QUE CONSUMO</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >TENHO UMA IDEIA DE QUANTAS CALORIAS CONSUMO NAS MINHAS REFEIÇÕES DIÁRIAS</button><br><br>
-                        <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " >EU NÃO ME IMPORTO COM AS CALORIAS</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >SIM! ME PREOCUPO E REGULO AQUANTIDADE DE CALORIAS QUE CONSUMO</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >TENHO UMA IDEIA DE QUANTAS CALORIAS CONSUMO NAS MINHAS REFEIÇÕES DIÁRIAS</button><br><br>
+                        <button type="button" name="p3" id="p3" @click="store" class="botao" >EU NÃO ME IMPORTO COM AS CALORIAS</button><br><br>
                       </div>
                      
                   </div>

@@ -1,6 +1,14 @@
 <style scoped>
 @media only screen and (max-device-width: 900px) {
 
+  .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+  }
+  button{
+    width: 13rem !important;
+  }
 .balao{
   
   margin-top: -7% !important;
@@ -27,7 +35,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -55,7 +68,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -105,14 +118,14 @@
                     Nos conte o quão é difícil é o processo de perder peso para você:<br><br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >SE EU ME DEDICAR - PERCO PESO FÁCIL</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >SE EU ME DEDICAR - PERCO PESO FÁCIL</button><br><br>
                       </div>
                       <div class="resposta">
-                        <button type="button" name="p3" id="p3" @click="store" class="btn  btn-lg " >PERDER PESO É UM POUCO DIFÍCIL PARA MIM</button><br><br>
+                        <button type="button" name="p3" id="p3" @click="store" class="botao" >PERDER PESO É UM POUCO DIFÍCIL PARA MIM</button><br><br>
                       </div>
                      
                       <div class="resposta">
-                        <button type="button" name="p5" id="p5" @click="store" class="btn  btn-lg " >SEMPRE FOI MUITO DIFÍCIL</button><br><br>
+                        <button type="button" name="p5" id="p5" @click="store" class="botao" >SEMPRE FOI MUITO DIFÍCIL</button><br><br>
                       </div>
                   </div>
               </div>

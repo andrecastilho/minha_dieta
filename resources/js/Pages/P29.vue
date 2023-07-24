@@ -1,5 +1,9 @@
 <style scoped>
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 600px) {   .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+  }
   span{
   left: 2.5rem !important;
     position: relative !important;
@@ -28,7 +32,13 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+  width: 10rem;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -36,7 +46,7 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
-  height: 40rem;
+  height: 70rem;
   padding-top: 2rem;
 }
 
@@ -89,7 +99,7 @@ span{
                           <input @blur="checkForm"  type="text" name="email" id="email" v-model="form.email" placeholder="Email"> 
                           <span id="err_email" style="display: none;">*Obrigatório</span> <br><br>
                           <div style="bottom"> 
-                            <button type="submit" id="p1" class="btn  btn-lg " >FINALIZAR</button><br><br>
+                            <button type="submit" id="p1" class="botao" >FINALIZAR</button><br><br>
                           </div>
                         </form>
                       </div>

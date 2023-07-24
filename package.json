@@ -24,6 +24,7 @@
         "jquery": "^1.9.1",
         "v-mask": "^2.3.0",
         "vue-chartjs": "^5.2.0",
+        "vue-router": "^4.2.4",
         "vue-sidebar-menu": "^5.2.8",
         "vue-the-mask": "^0.11.1",
         "vue-virtual-scroller": "^2.0.0-beta.8",

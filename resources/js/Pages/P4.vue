@@ -1,10 +1,32 @@
 <style scoped>
-@media only screen and (max-device-width: 600px) {
-button{
-  position: relative;
-  left: -8rem;
+@media only screen and (max-device-width: 600px) {   .botao{
+    position: relative !important;
+    height: 5.5rem !important;
+    padding: 0.5rem;
+    bottom: -2rem !important;
+  }
+  button{
+    width: 13rem !important;
+    position: relative;
+    left: -10rem;
+  }
+  .imagem{
+    width: 15rem !important;
+    position: relative;
+    right: 3.5rem !important;
+  }
+ 
+.pergunta{
+  position: relative !important;
+    width: 20rem !important;
+    left: 5rem !important;
+    font-size: 1rem !important;
+    left: 1rem !important;
+    top: 0.5rem;
 }
-
+.logo{
+  left: 0rem;
+}
 
 }
 .head{
@@ -27,7 +49,13 @@ button{
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+  bottom: 3rem;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -36,7 +64,7 @@ button{
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 9%;
-  height: 35rem;
+  height: 70rem;
 }
 
 .pergunt{
@@ -56,9 +84,26 @@ button{
   background-color: rgb(60, 70, 37);
   font-size: large;
   text-align: center;
-  right: 20rem;
+  right: 25rem;
+  width: 30rem;
 }
 
+.pergunta{
+  width: 37rem;
+    position: relative;
+    left: 20rem;
+    bottom: 4rem;
+}
+.texto{
+  width: 100%;
+  padding-left: 34% ;
+  padding-top: 2%;
+  background-color:#717850;
+}
+.imagem{
+  padding-left: 2%;
+   width: 46%;
+}
 </style>
         <template> 
           <container>
@@ -67,8 +112,8 @@ button{
                 <img class="logo" :src="'../../storage/img2/LOGOTIPO.png'">
               </div>
             </div>
-                <div style="width: 100%;padding-left: 30% ;padding-top: 2%;background-color:#717850;">
-                        <img style="padding-left: 2%; width: 40%;" :src="'../storage/img/GRÁFICO.png'" alt="">
+                <div class="texto">
+                        <img class="imagem" style="" :src="'../storage/img/GR├БFICO2.png'" alt="">
                 </div>
                 <div class="corpo">
                     <div class="pergunta">
@@ -83,7 +128,7 @@ button{
                     <br>
                   <div class="todo">
                     <div style="text-align: center;position: relative;padding-left: 68%;"> 
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " >AVANÇAR</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" >AVANÇAR</button><br><br>
                       </div>
                      
                   </div>

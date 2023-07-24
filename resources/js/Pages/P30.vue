@@ -12,16 +12,70 @@
 /* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
 @media screen and (max-width: 880px) {
 
-  .quero-agora{
-    width: 20rem !important;
-    position: relative  !important;;
-    right: 2rem !important;
-    top: 2rem !important;
+  #food-icon {
+    width: 8rem !important;
   }
-  a{
+
+  .garantia {
+    top: 40rem !important;
+  }
+
+  .verdes {
+    width: 7rem !important;
+  }
+
+  #bmi-phase-2 {
+    position: relative;
+    width: 7rem !important;
+  }
+
+  #metabolic-age-phase-1 {
+    position: relative;
+    right: 1.5rem;
+  }
+
+  .js-animation {
+    width: 9rem !important;
+  }
+
+  .img {
+    width: 2.5rem !important;
+    position: relative !important;
+    right: 2rem !important;
+  }
+
+  .texto3L {
+    position: relative;
+    right: 2rem !important;
+  }
+
+  .qtd_agua {
+    position: relative;
+    width: 10rem !important;
+    left: 0.5rem !important;
+  }
+
+  .resposta {
+    top: -48rem !important;
+  }
+
+  .foot {
+    top: 84rem !important;
+  }
+
+  .quero-agora {
+    width: 20rem !important;
+    position: relative !important;
+    ;
+    top: 2rem !important;
+    left: -2rem !important;
+  }
+
+  a {
     width: 11rem !important;
   }
-  .titulo-perguntas{
+
+  .titulo-perguntas {
     position: relative;
     top: -49rem;
     text-align: center;
@@ -29,63 +83,88 @@
     font-weight: bold;
     color: rgb(59 72 19);
     padding-bottom: 10%;
+    width: 95%;
   }
-  .garanta-agora{
+
+  .garanta-agora {
     display: relative;
     top: 1rem;
   }
-  .btn-quero-tem-acesso{
+
+  .btn-quero-tem-acesso {
     width: 215% !important;
+    width: 215% !important;
+    position: relative !important;
+    top: 17rem;
   }
+
   .quadro-branco-tem-acesso {
-    left: 0rem !important;
+    right: 1rem !important;
+    left: -0.5rem !important;
     width: 90% !important;
+    height: 23rem;
   }
-  .pergunta{
-    margin-bottom: 6rem !important;
+
+  .pergunta {
+    top: -50rem;
+    left: 1rem !important;
   }
-  .perguntas{
-    top: 72rem !important;
+
+  .perguntas {
+    top: 100rem !important;
   }
+
   .img-garantia {
-    right: 5rem;
+    right: 4rem;
   }
-  .titulo-garantia{
+
+  .titulo-garantia {
     font-size: 1rem;
   }
-  .texto-garantia{
+
+  .texto-garantia {
     font-size: 1rem !important;
   }
-  .tem-acesso{
-    top: 55rem;
-    height: 70rem;
+
+  .tem-acesso {
+    top: 55rem !important;
+    height: 70rem !important;
   }
-  .ganha-metodo{
-    top: 55rem;
-  }
-  .beneficios{
+
+  .ganha-metodo {
     top: 55rem !important;
   }
-  .incluso{
+
+  .beneficios {
+    top: 55rem !important;
+  }
+
+  .incluso {
     display: none !important;
   }
-  .titulo-o-que-esta-incluso{
-    display: none;  
+
+  .titulo-o-que-esta-incluso {
+    display: none !important;
   }
-.depoimentos{
-  display: block !important;
-}
-.bloco-depoimentos{
-  position: relative !important;
-  top: 50rem !important;
-  height: 50rem !important;
-}
-.quero-meu-plano-agora1 {
+
+  .depoimentos {
+    display: block !important;
+  }
+
+  .bloco-depoimentos {
+    position: relative !important;
+    top: 50rem !important;
+    height: 50rem !important;
+  }
+
+  .quero-meu-plano-agora1 {
     display: none;
   }
-  .book0{
+
+  .book0 {
     display: none;
   }
+
   .plano4 {
     font-size: 1rem !important;
     padding-right: 0rem !important;
@@ -151,6 +230,17 @@
     grid-template-rows: 0% !important;
     font-size: 60% !important;
     position: relative;
+    width: 18rem !important;
+    right: 3rem;
+  }
+
+  .balao-vertical {
+    border: 1px white solid !important;
+    border-color: white !important;
+    border-radius: 20px !important;
+    padding: 8% !important;
+    display: inherit !important;
+    height: 26rem !important;
   }
 
   a {
@@ -164,6 +254,10 @@
 
   .b {
     overflow-y: auto !important;
+  }
+
+  .quadro-branco {
+    height: 34rem !important;
   }
 }
 
@@ -748,6 +842,7 @@
 }
 
 
+
 .capa-imagem {
   overflow: hidden;
 }
@@ -921,7 +1016,7 @@ h3 {
   padding: 10%;
   background-color: rgb(59 72 19);
   color: white;
-  top: 29rem;
+  top: 36rem;
 
 
 }
@@ -999,7 +1094,7 @@ h3 {
 }
 
 .quero-meu-plano-agora {
-  
+
   text-align: center;
   padding: 10%;
   top: 0rem;
@@ -1105,7 +1200,7 @@ h3 {
 
 .titulo-o-que-esta-incluso {
   position: relative;
-  top: 35rem;
+  top: 37rem;
   left: 15rem;
   font-size: 2rem;
   font-weight: bold;
@@ -1206,10 +1301,12 @@ h3 {
 
 
 }
-.js-animation{
+
+.js-animation {
   position: relative;
-    right: 0rem;
+  right: 0rem;
 }
+
 .dep {}
 
 .dep_nome {
@@ -1219,15 +1316,231 @@ h3 {
 
 .dep_profissao {}
 
-.quero-agora{
+.quero-agora {
   position: relative;
   left: 2rem;
+  top: 2rem
+}
+
+.img {
+  width: 5rem;
+}
+
+.quero-meu-plano-agora1 {
+  position: relative;
+  top: 72rem;
+  left: 11rem;
+}
+
+.foot {
+  position: relative;
+  top: 15rem;
+  background: rgb(59 72 19);
+  height: 40rem;
+}
+
+.pergunta {
+  position: relative;
+  top: -50rem;
+  text-align: left;
+  margin: 10%;
+  color: rgb(162, 197, 101);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.resposta {
+  position: relative;
+  top: -55rem;
+  margin: 10%;
+}
+
+.titulo-perguntas {
+  position: relative;
+  top: -45rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(59 72 19);
+}
+
+.perguntas {
+  position: relative;
+  top: 56rem;
+  background-color: white;
+}
+
+.sub-garantia {
+  color: rgb(162, 197, 101);
+  font-size: 1rem;
+}
+
+.img-garantia {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.texto-garantia {
+  position: relative;
+  float: right;
+  width: 50%;
+}
+
+.garantia {
+  position: relative;
+  top: 30rem;
+  background-color: rgb(59 72 19);
+  float: left;
+  color: white;
+  padding: 10%;
+  height: 50rem;
+}
+
+.titulo-garantia {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.valor-plano {
+  font-size: 3rem;
+  color: rgb(162, 197, 101);
+  font-weight: bold;
+  padding: 2%;
+  margin: 2%;
+}
+
+.btn-quero-tem-acesso {
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.garanta-agora {
+  position: relative;
+  top: 7rem;
+  left: 1rem;
+  font-size: 0.8rem;
+}
+
+.quadro-branco-tem-acesso {
+  position: relative;
+  left: 8rem;
+  background-color: white;
+  border-radius: 40px;
+  width: 70%;
+  text-align: center;
+  margin: 2rem;
+  height: 25rem;
+
+}
+
+.titulo-tem-acesso {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tem-acesso {
+  position: relative;
+  top: 30rem;
+  background-color: rgb(150, 204, 68);
+  height: 40rem;
+  padding-top: 5%;
+}
+
+.quadro-branco-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+}
+
+.quadro-branco-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5%;
+  font-size: 0.8rem;
+}
+
+.titulo-ganha-metodo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(162, 197, 101);
+  text-align: center;
+  padding: 2%;
+
+
+}
+
+.sub-titulo-ganha-metodo {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ganha-metodo {
+  position: relative;
+  top: 25rem;
+  width: 100%;
+  left: 1rem;
+}
+
+.quadro-ganha-metodo {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+
+}
+
+.beneficios {
+  position: relative;
+  top: 25rem;
+
+
+}
+
+.titulo-beneficios {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.beneficios-quadros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+
+}
+
+.b-quadros {
+  border: 2px black solid;
+  border-radius: 40px;
+  padding: 5%;
+  margin: 1%;
+}
+
+.frutas {
+  float: right;
+  position: relative;
+  width: 5rem;
+}
+
+.idMetabolica {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 10%;
+
+}
+
+.sua-idade-metabolica {
+  position: relative;
+  font-size: 0.7rem;
+  left: -1rem;
 }
 </style>
 
 <template>
   <container>
-    <div class="content">
+    <div class="content" @load="calculos()">
       <div class="row">
         <div class="col-sm" style="padding-left: 10%;">
           <div class="for-logo">
@@ -1240,7 +1553,7 @@ h3 {
             </b>
           </div>
           <div class="quero-meu-plano-agora">
-            <a href="" style="color: white;"> Quero meu plano agora</a>
+            <a href="https://checkout.minhadietacetogenica.com/OF2E1224A" style="color: white;"> Quero meu plano agora</a>
           </div>
         </div>
 
@@ -1357,7 +1670,6 @@ h3 {
                     </text>
                   </g>
                 </svg>
-
                 <div style="width: 150%;padding: 1%;">
                   <span>Dia 1</span>
                   <span>Dia 6</span>
@@ -1376,7 +1688,6 @@ h3 {
                 <div style="width: 150%;margin: 11%;font-size: 120%;">Com base no sucesso dos outros
                   utili z adores com o mesmo tipo metabólico
                 </div>
-
                 <div style="width: 160%;">
                   <div class="" style="width: 40%;float: left;position: relative;">
                     <svg id="silhouette" class="gender-mode__man !h-[215px] !w-[114px]" data-e2e="estimates-graph-male"
@@ -1404,7 +1715,6 @@ h3 {
                       </g>
                     </svg>
                   </div>
-
                   <div class="text-center font-normal text-zeta"
                     style="width: 50%;float: right;margin: 0%;font-size: 150%;">
                     <div><span class="estimativa_porcento">7%</span> Pescoço</div>
@@ -1418,7 +1728,6 @@ h3 {
               </div>
             </div>
           </div>
-
           <div class="b">
             <div class="balao-vertical">
               <div class="max-w-[145px]">
@@ -1427,7 +1736,6 @@ h3 {
                   Pessoas semelhantes a si alcançaram os resultados desejados em menos de 4 semana</span>
               </div>
               <div>
-
                 <svg style="width: 150%;  padding-top: 0%;" id="silhouette-male-purple" data-e2e="similarity-graph-male"
                   class="gender-mode__man" viewBox="0 0 140 296" shape-rendering="geometricPrecision"
                   text-rendering="geometricPrecision">
@@ -1441,19 +1749,14 @@ h3 {
             </div>
           </div>
         </div>
-
-
         <div class="row-quadro-branco">
           <div class="quadro-branco">
             <div class="">
               <div class="">
                 <h3 class="" style="padding: 0%;">O seu <span class="text-hilite-2">IMC</span>
                   atual</h3>
-
               </div>
-
-              <div class="js-animation" style="  position: relative;
-    right: 2rem;">
+              <div class="js-animation" style="  position: relative; right: 1rem;">
                 <svg style="width: 10rem; " id="bmi-phase-2" class="bmi-animations w-full"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 345 167"
                   shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
@@ -1484,7 +1787,6 @@ h3 {
                         stroke="var(--main-bg)" stroke-width="0">
                       </circle>
                     </g>
-
                     <text id="bmi-phase-2-value-2" dx="0" dy="0" class="rtl:translate-x-18" font-size="0"
                       font-weight="700" opacity="0" fill="var(--main-color)">
                       <tspan id="bmi-phase-2-tspan1" x="167.268" y="143.621" font-size="34" font-weight="700"
@@ -1502,14 +1804,21 @@ h3 {
           </div>
           <div class="quadro-branco">
             <div class="flex h-full flex-col justify-between p-7.5 pb-[50px]">
-              <h3 class="" style="padding-top: 10%;">Idade Metabólica</h3>
-              <div class="text-base text-zeta">A <span class="font-bold">idade metabólica</span> é um indicador da idade
-                do
+              <h3 class="" style="padding-top: 10%;">
+
+                <div id="result"></div> Idade Metabólica
+              </h3>
+              <div class="text-base text-zeta">A <span class="font-bold"> idade metabólica</span> é um indicador da idade
                 seu corpo</div>
-              <div class="" style="">
-                <svg id="metabolic-age-phase-1" style="top: -1rem;
-    position: relative;
-    width: 119px;" class="js-metabolic metabolic-age-phase-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 252"
+              <div class="">
+                <div class="idMetabolica">
+                  <div class="sua-idade-metabolica"><b>Sua idade Metabolica</b>
+                    <div id="idade_metabolica2">*</div>
+                  </div>
+                  <div style="font-size: 80%;" id="idade_metabolica1"><b>Sua idade </b> {{ idade }}</div>
+                </div>
+                <svg id="metabolic-age-phase-1" style="top: -1rem;position: relative;width: 119px;"
+                  class="js-metabolic metabolic-age-phase-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 252"
                   shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                   <g id="metabolic-age-phase-1-metabolic-age-phase-1">
                     <g id="metabolic-age-phase-1-pink-bar">
@@ -1533,7 +1842,7 @@ h3 {
                 <div class="space-x-1 text-2xl font-bold leading-[1.33] rtl:space-x-reverse"><span
                     class="js-calories-from">1500</span>-<span class="js-calories-to">1600</span>Cal</div>
               </div>
-              <div class="js-animation" style="    width: 10rem; right: 2rem; position: relative;  top: 2rem;">
+              <div class="js-animation" style="    width: 10rem; right: 1rem; position: relative;  top: 2rem;">
 
                 <svg id="calories-phase-2" class="js-cal ltr-dir" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 279 180" shape-rendering="geometricPrecision"
@@ -1611,11 +1920,13 @@ h3 {
                 class="js-animation relative flex space-x-5 py-3 before:absolute before:bottom-0 before:h-[1px] before:w-full before:bg-dashes before:bg-[length:22px_1px] before:bg-repeat-x after:absolute after:top-0 after:h-[1px] after:w-full after:bg-dashes after:bg-[length:22px_1px] after:bg-repeat-x rtl:space-x-reverse">
                 <div class="bottle-container">
 
+                  <div class="qtd_agua">
+                    <img class="img" :src="'../../storage/img/qtd_agua.png'">
+                  </div>
 
 
 
-
-                  <div class="text-[12.8px] font-light leading-[1.56]">
+                  <div class="texto3L">
                     <span class="block text-[31.3px] font-bold leading-[1.22] text-hilite-7">3 L </span><br>
                     A sua ingestão de água recomendada
                   </div>
@@ -1669,7 +1980,8 @@ h3 {
               <div class="text-base text-zeta">Pode estar confiante que o <span class="font-bold">Plano alimentar
                 </span> irá levá-lo onde quer.</div>
               <div class="js-animation relative">
-                <svg style="fill:black" class="mt-10" viewBox="0 0 285 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style="fill:black" class="mt-10" viewBox="0 0 285 238" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path stroke="var(--main-color)" stroke-opacity=".1" stroke-linecap="round" stroke-dasharray="8 12"
                     d="M22.5 237.5h262M22.5 195.5h262M22.5 153.5h179M22.5 111.5h262M22.5 69.5h262M22.5 27.5h262"></path>
                   <path fill="url(#tfhsvngaea)" d="M140 27h62v168h-62z"></path>
@@ -1710,8 +2022,8 @@ h3 {
           <div style="font-size: 80%;">
             das pessoas que fazem dieta cetogênica perdem peso muito mais rápido de forma saudável
           </div>
-          <div class="quero-agora" >
-            <a href="">QUERO MEU PLANO AGORA !</a>
+          <div class="quero-agora">
+            <a href="https://checkout.minhadietacetogenica.com/OF2E1224A">QUERO MEU PLANO AGORA !</a>
           </div>
         </div>
       </div>
@@ -1720,8 +2032,8 @@ h3 {
         <div class="" style="color:#8fcb27;font-size: 2rem;padding: 1rem;font-weight: 700;">
           O que é dieta citogênica ?
         </div>
-        <div class="" style="float: right;">
-          <img style="width: 15rem;" :src="'../storage/img/frutas_verdes.png'">
+        <div class="frutas">
+          <img class="verdes" :src="'../storage/img/frutas_verdes.png'">
         </div>
         <div class="texto-bloco-verde-escuro">
           A dieta cetogênica é um tipo de dieta de baixo teor de
@@ -1848,7 +2160,7 @@ h3 {
       </div>
 
       <div class="quero-meu-plano-agora1">
-        <a href="">QUERO MEU PLANO AGORA !</a>
+        <a href="https://checkout.minhadietacetogenica.com/OF2E1224A">QUERO MEU PLANO AGORA !</a>
       </div>
       <div class="como-funciona-2">
         Como funciona:
@@ -1879,7 +2191,7 @@ h3 {
         </div>
 
         <div class="balao-como" style="position:relative;top:15rem">
-          <div class="como" >
+          <div class="como">
             3 semana: Adaptação contínua
           </div>
           <div class="funci" style="position: relative;">
@@ -1895,7 +2207,7 @@ h3 {
           <img class="seta-direita" :src="'../storage/img/seta_direita.png'">
         </div>
 
-        <div class="balao-como" style="position:relative;top:15rem;float: right;">
+        <div class="balao-como" style="position:relative;top:16rem;float: right;width: 18rem;">
           <div class="como">
             4 semana:Estabilização
           </div>
@@ -2215,213 +2527,11 @@ h3 {
   </container>
 </template>
 
-<style>
-.quero-meu-plano-agora1{
-  position: relative;
-  top: 72rem;
-  left: 15rem;
-}
-.foot{
-  position: relative;
-  top: 15rem;
-  background: rgb(59 72 19);
-  height: 40rem;
-}
-.pergunta{
-  position: relative;
-  top: -50rem;
-  text-align: left;
-  margin: 10%;
-  color: rgb(162, 197, 101);
-  font-weight: bold;
-  font-size: 2rem;
-}
-.resposta{
-  position: relative;
-  top: -55rem;
-  margin: 10%;
-}
-.titulo-perguntas{
-  position: relative;
-  top: -45rem;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  color:  rgb(59 72 19);
-}
-.perguntas{
-  position: relative;
-  top: 56rem;
-  background-color: white;
-}
-.sub-garantia{
-  color: rgb(162, 197, 101);
-  font-size: 1rem;
-}
-.img-garantia{
-  position: relative;
-  float: left;
-  width: 50%;
-}
-.texto-garantia{
-  position: relative;
-  float: right;
-  width: 50%;
-}
-
-.garantia {
-  position: relative;
-  top: 30rem;
-  background-color: rgb(59 72 19);
-  float: left;
-  color: white;
-  padding: 10%;
-  height: 50rem;
-}
-
-.titulo-garantia {
-  position: relative;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.valor-plano {
-  font-size: 3rem;
-  color: rgb(162, 197, 101);
-  font-weight: bold;
-  padding: 2%;
-  margin: 2%;
-}
-
-.btn-quero-tem-acesso {
-  font-size: 0.8rem;
-    position: relative;
-}
-
-.garanta-agora {
-  position: relative;
-  top: 7rem;
-  left: 1rem;
-  font-size: 0.8rem;
-}
-
-.quadro-branco-tem-acesso {
-  position: relative;
-  left: 8rem;
-  background-color: white;
-  border-radius: 40px;
-  width: 70%;
-  text-align: center;
-  margin: 2rem;
-  height: 25rem;
-
-}
-
-.titulo-tem-acesso {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.tem-acesso {
-  position: relative;
-  top: 30rem;
-  background-color: rgb(150, 204, 68);
-  height: 40rem;
-  padding-top: 5%;
-}
-
-.quadro-branco-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 5%;
-}
-
-.quadro-branco-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 5%;
-  font-size: 0.8rem;
-}
-
-.titulo-ganha-metodo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(162, 197, 101);
-  text-align: center;
-  padding: 2%;
-
-
-}
-
-.sub-titulo-ganha-metodo {
-  font-size: 1rem;
-  text-align: center;
-  font-weight: bold;
-}
-
-.ganha-metodo {
-  position: relative;
-  top: 25rem;
-  width: 100%;
-  left: 1rem;
-}
-
-.quadro-ganha-metodo {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 5%;
-
-}
-
-.beneficios {
-  position: relative;
-  top: 25rem;
-
-
-}
-
-.titulo-beneficios {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.beneficios-quadros {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 5%;
-
-}
-
-.b-quadros {
-  border: 2px black solid;
-  border-radius: 40px;
-  padding: 5%;
-  margin: 1%;
-}
-</style>
 <script >
 
 
 
-// const gender = sexo;
-// alert(gender);
-// // const age = $('.medidas');
-// // const weight = peso;
-// // const height = altura;
-// // const activityLevel = (1);
 
-// // const tmb = Math.round(
-// //   gender === 'female'
-// //   ? (655 + (9.6 * weight) + (1.8 * height) - (4.7 *age)) //if (cálculo pronto)
-// //   : (66 + (13.7 * weight) + (5 * height) - (6.8 *age)) //else
-// // );
-
-// // const maintenance = Math.round(tmb * Number(activityLevel));
-// // const loseWeight = maintenance - 450;
-// // const gainWeight = maintenance + 450;
-
-// // alert(loseWeight);
 
 
 // }
@@ -2434,7 +2544,6 @@ const form = defineComponent({
 })
 
 export default defineComponent({
-
 
 
 
@@ -2461,6 +2570,41 @@ export default defineComponent({
 
       }),
     }
+  },
+
+  methods: {
+
+    calculos() {
+
+      // alert(this.sexo);
+      const gender = this.sexo;
+      const age = this.idade;
+      const weight = this.peso;
+      const height = this.altura;
+      const activityLevel = (1);
+      let idade_metabolica = null;
+
+      const tmb = Math.round(
+        gender === 'homem'
+          ? (655 + (13.75 * weight) + (5.003 * height) - (6.755 * age)) //if (cálculo pronto)
+          : (66 + (9.563 * weight) + (1.850 * height) - (4.676 * age)) //else
+      );
+
+      const maintenance = Math.round(tmb * Number(activityLevel));
+      const loseWeight = maintenance - 70 + 2000;
+      const gainWeight = maintenance + 70 + 2000;
+
+      // document.getElementById("idade_metabolica1").innerHTML = loseWeight;
+      document.getElementById("idade_metabolica2").innerHTML = "<div class='resultIdadeMetabolica'>" + gainWeight + "</div>";
+    },
+  },
+
+  beforeMount() {
+
+    setTimeout(() => {
+      this.calculos()
+    }, 1000);
+
   },
 
 })

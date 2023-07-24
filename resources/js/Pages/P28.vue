@@ -1,4 +1,18 @@
 <style scoped>
+@media only screen and (max-device-width: 750px) {
+  button {
+    color: white;
+    background-color: rgb(60, 70, 37);
+    text-align: left;
+    font-size: large;
+    width: 13rem !important;
+
+  text-align: center !important;
+  }
+  .logo {
+  width: 3rem !important;
+}
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -19,7 +33,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -47,7 +66,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -76,11 +95,11 @@
                   <div class="todo">
                       <div class="resposta">
                         
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/barriga.png'"> BARRIGA</button><br><br>
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/braco.png'"> BRAÇOS</button><br><br>
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/cintura.png'"> CINTURA</button><br><br>
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/coxa.png'"> COXAS</button><br><br>
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " ><img class="logo" style="width: 10%;" :src="'../../storage/img/XIS.png'"> NENHUMA DAS ANTERIORES</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" ><img class="logo" style="width: 10%;" :src="'../../storage/img/barriga.png'"> BARRIGA</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" ><img class="logo" style="width: 10%;" :src="'../../storage/img/braco.png'"> BRAÇOS</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" ><img class="logo" style="width: 10%;" :src="'../../storage/img/cintura.png'"> CINTURA</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" ><img class="logo" style="width: 10%;" :src="'../../storage/img/coxa.png'"> COXAS</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" ><img class="logo" style="width: 10%;" :src="'../../storage/img/XIS.png'"> NENHUMA DAS ANTERIORES</button><br><br>
                         
                       </div>
                   </div>

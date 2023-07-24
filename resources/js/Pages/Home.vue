@@ -12,16 +12,33 @@
 
 
 @media only screen and (max-device-width: 750px) {
+.corpo{
+  position: relative;
+    right: 10rem !important;
+}
+  .bloco2{
+    font-size: 1.2rem;
+    position: relative;
+    left: -1rem;
+  }
+  .botao-comece-agora{
+    bottom: 8rem !important;
+    right: 10rem !important;
+  }
 
+  .logo{
+    width: 8rem !important;
+  }
   .bloco-jornais{
-    left: -11rem !important;
+    left: -1rem !important;
     width: 45rem !important;
 }
   .btn-comece-agora{
     width: 10rem !important;
     position: relative;
-    left: 1rem;
+    left: 11rem;
     color: #333 !important;
+    top: 2rem;
   }
   .o_que_e_citogenica{
     top:0rem;
@@ -30,10 +47,12 @@
     display: flex;
     position: relative !important;
     bottom: 1rem !important;
+    left: 0rem !important;
   }
   .btn-vertical{
     width: 22rem !important;
   }
+
   .textos{
   background-color: #fff !important;
 }
@@ -42,9 +61,9 @@
   }
   .junte-se{
     position: relative !important;
-    right: 11rem !important;
-    padding: 0rem !important;
-    left: 2rem !important;
+    left: -2rem !important;
+    width: -1rem !important;
+    font-size: 1rem !important;
   }
   .o_que_e_citogenica{
     padding-top: 2rem !important;
@@ -56,8 +75,9 @@
     width: 13rem !important;
   }
   .mulher-homen{
-    position: unset !important;
-    background-color: white;
+    position: relative;
+    padding-bottom: 5rem;
+
   }
   .homem{
     font-size: 57% !important;
@@ -68,15 +88,20 @@
     font-size: 67% !important;
   }
   .plano{
-    padding-left: 0% !important;
+    padding-left: 10rem !important;
     padding-right: 0% !important;
   }
   button{
     font-size: 60% !important;
   }
   .oque-vai-receber{
+   width: 100% !important;
+    margin: 0.5rem;
     width: 100% !important;
     margin: 0.5rem;
+    /* right: 2rem; */
+    position: relative;
+    float: inherit;
   }
   .btn{
         /* width: 14rem !IMPORTANT;
@@ -87,15 +112,19 @@
 
 
 .bloco-jornais{
-    position: relative ;
-    left: -2rem ;
-    width: 70rem;
+    position: relative;
+    left: 4rem;
 }
 .btn{
   width: 40rem;
 }
 
-.corpo {
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   color: antiquewhite;
   text-align: center;
@@ -110,8 +139,8 @@
 
 .head {
   text-align: right;
-  padding: 2%;
   background-color: rgb(60, 70, 37);
+  height: 3rem;
 }
 
 .menu {
@@ -152,9 +181,8 @@ container {
 }
 
 .plano {
-    padding-left: 24%;
+  padding-left: 20rem;
     word-wrap: break-word;
-    width: 109%;
 }
 
 button {
@@ -187,6 +215,7 @@ d {
 
 .todo-plano {
   text-align: left;
+    position: relative;
 }
 
 .oque-vai-receber {
@@ -194,7 +223,7 @@ d {
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 14rem;
+  width: 25rem;
   border-radius: 3%;
   padding: 2%;
   float: left;
@@ -210,15 +239,17 @@ d {
   text-align: center;
   font-family: 'Montserrat';
   font-size: 2rem;
-  left: 6rem;
+  left: 15rem;
+  width: 50rem;
 }
 
 .prato2 {
  width: 73%;
+   width: 73%;
     border-radius: 2%;
     position: relative;
     /* padding-top: 20%; */
-    bottom: 23rem;
+    bottom: 29rem;
     left: 9rem;
 }
   
@@ -234,7 +265,9 @@ d {
 }
 
 .botao-comece-agora {
-  padding-left: 10%;
+   position: relative ;
+    bottom: 10rem ;
+    right: 15rem ;
 }
 
 .rodape {
@@ -251,6 +284,7 @@ d {
 
 #btn-comece-agora {
   padding: 10%;
+  height: 3rem;
 }
 
 #prato2 {
@@ -390,7 +424,9 @@ display: flex;
   background-color: #717850;
 }
 .img_prato2{
-  width: 37rem;
+  width: 40rem;
+  position: relative;
+  left: 10.5rem;
 }
 
 .btn:visited {
@@ -416,6 +452,7 @@ display: flex;
 .btn-white {
     background-color: #fff;
     color: black;
+    height: 3rem;
 }
 
 .btn::after {
@@ -462,8 +499,36 @@ display: flex;
 .btn-vertical{
   position: relative;
   left: 0.5rem;
+  border-radius: 20px;
+  height: 5rem;
+  width: 40rem;
+  border: 0;
 }
-
+.numeros{
+  position: relative;
+  left: 2rem;
+  top: 1rem;
+  
+}
+.pos-numeros{
+  position: relative;
+  float: right;
+  bottom: 2rem;
+  right: 2rem;
+}
+.imagem_prato{
+  background-color: white;
+}
+container{
+  position: relative;
+    width: 100%;
+    display: inline-grid;
+}
+.receber img{
+  font-weight: bold;
+  padding: 1rem;
+  width: 4rem;
+}
 </style>
 <template>
   <container>
@@ -477,7 +542,6 @@ display: flex;
             <label class="menu__btn" for="menu__toggle">
               <span></span>
             </label>
-
             <ul class="menu__box">
               <li><a class="menu__item" href="#">Central de ajuda</a></li>
               <li><a class="menu__item" href="#">Blog</a></li>
@@ -487,8 +551,6 @@ display: flex;
           </div>
       </div>
     </div>
-    <div>
-      <div>
         <div class="imagem_prato">
           <img class="d-block w-100" :src="'../storage/img/PRATO.jpg'" alt="">
         </div>
@@ -501,17 +563,15 @@ display: flex;
 
         <div class="mulher-homen">
           <div class="mulher">
-            <a class="btn btn-primary btn-lg btn-white" style="width: 8rem;" href="p/?sexo=mulher" id="mulher" role="button" aria-pressed="true"><img
-                style="float:right;width: 15%; ;" :src="'../storage/img/MULHER.png'" alt="homem"> Mulher </a>
+            <a class="btn btn-primary btn-lg btn-white" style="border:0;width: 8rem; height: 3rem;" href="p/?sexo=mulher" id="mulher" role="button" aria-pressed="true"><img
+                style="float:right;width: 15%;height: 2rem;border: 0; " :src="'../storage/img/MULHER.png'" alt="homem"> Mulher </a>
           </div>
           <div class="homem btn-white">
-            <a class="btn btn-primary btn-lg btn-white2" style="color:blue;width: 8rem;" href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
-                style="float:right;width: 18%; ;" :src="'../storage/img/HOMEM.png'" alt="homem">Homem</a>
+            <a class="btn btn-primary btn-lg btn-white2" style="color:blue;width: 8rem; height: 3rem;" href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
+                style="float:right;width: 18%; height: 2rem;border: 0;" :src="'../storage/img/HOMEM.png'" alt="homem">Homem</a>
           </div>
         </div>
 
-      </div>
-    </div>
     <div style="background-color: #717850;">
       <div class="corpo">
         <div class="objetivos-emagrecimento">
@@ -519,33 +579,33 @@ display: flex;
         </div>
         <div class="todo-plano">
           <div class="plano">
-            <button type="button" class="btn-vertical  btn  btn-lg ">
-              <div style="float: left;"><span><b>01</b></span> </div>
-              <div style="text-align: right;padding-top: 10px;;">
+            <button type="button" class="btn-vertical">
+              <div class="numeros"><span><b>01</b></span> </div>
+              <div class="pos-numeros">
                 <d>Perﬁl de dieta instantâneo gratuito</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg btn-vertical ">
-              <div style="float: left;"><span><b>02</b></span> </div>
-              <div style="text-align: right;padding-top: 10px;;">
+            <button type="button" class="btn-vertical">
+              <div class="numeros"><span><b>02</b></span> </div>
+              <div class="pos-numeros">
                 <d>Plano alimentar super rápido</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg btn-vertical ">
-              <div style="float: left;"><span><b>03</b></span> </div>
-              <div style="text-align: right;padding-top: 10px;;">
+            <button type="button" class="btn-vertical">
+              <div class="numeros"><span><b>03</b></span> </div>
+              <div class="pos-numeros">
                 <d>Desenhado exclusivo pra você</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg btn-vertical ">
-              <div style="float: left;"><span><b>04</b></span> </div>
-              <div style="text-align: right;padding-top: 10px;;">
+            <button type="button" class="btn-vertical">
+              <div class="numeros"><span><b>04</b></span> </div>
+              <div class="pos-numeros">
                 <d>Uma assinatura para grandes resultados</d>
               </div>
             </button><br><br>
-            <button type="button" class="btn  btn-lg btn-vertical ">
-              <div style="float: left;"><span><b>05</b></span> </div>
-              <div style="text-align: right;padding-top: 12px;;">
+            <button type="button" class="btn-vertical">
+              <div class="numeros"><span><b>05</b></span> </div>
+              <div class="pos-numeros">
                 <d>Guia deﬁnitivo para dieta cetogênica</d>
               </div>
             </button><br><br><br><br>
@@ -563,7 +623,7 @@ display: flex;
         <div class="bloco2">
           <div class="oque-vai-receber">
             <h3 style="padding:10%;"> O que você vai receber:</h3>
-            <div style="padding: 5%;">
+            <div class="receber">
               <img class="checked" :src="'../storage/img/checked.png'"> Plano alimentar para um emagrecimento saudável e
               eﬁcaz<br>
               <img class="checked" :src="'../storage/img/checked.png'"> Receitas deliciosas de fácil preparo<br>
@@ -605,7 +665,7 @@ display: flex;
         </div>
 
         <div class="botao-comece-agora">
-          <button type="button" class="btn-comece-agora btn-white">Comece Agora</button>
+          <button type="button" @click="comprar" class="btn-comece-agora btn-white">Comece Agora</button>
         </div>
       </div>
     </div>
@@ -644,6 +704,12 @@ export default defineComponent({
   el: '#app',
 
   methods: {
+
+    comprar(){
+
+      window.location.href = "https://checkout.minhadietacetogenica.com/OF2E1224A";
+
+    },
 
     store(e) {
 

@@ -19,7 +19,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -28,7 +33,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2rem;
-  height: 40rem;
+  height: 70rem;
 }
 
 .pergunt{
@@ -75,11 +80,11 @@
                   <br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > MENOS DE 2 COPOS</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > DE 2 A 4 COPOS</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > DE 4 A 6 COPOS</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >DE 6 A 8 COPOS</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > MAIS DE 8 COPOS</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" > MENOS DE 2 COPOS</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > DE 2 A 4 COPOS</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > DE 4 A 6 COPOS</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >DE 6 A 8 COPOS</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > MAIS DE 8 COPOS</button><br><br>
                       </div>
                   </div>
               </div>

@@ -1,4 +1,16 @@
 <style scoped>
+@media only screen and (max-device-width: 750px) {
+  button {
+    color: white;
+    background-color: rgb(60, 70, 37);
+    text-align: left;
+    font-size: large;
+    width: 13rem !important;
+  }
+  .logo {
+  width: 6rem !important;
+}
+}
 .head{
     text-align: right;
     padding: 0.5%;
@@ -19,7 +31,12 @@
     padding-top: 20%;
 }
 
-.corpo{
+.botao{
+  position: relative;
+  border-radius: 20px;
+  height: 4rem;
+  border: 0;
+} .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
   color: antiquewhite;
@@ -28,7 +45,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2rem;
-  height: 40rem;
+  height: 70rem;
 }
 
 .pergunt{
@@ -47,7 +64,7 @@
   background-color: rgb(60, 70, 37);
   text-align: left;
   font-size: large;
-  width: 100%;
+  width: 30rem;
 }
 .porcentagem{
   width: 100%;
@@ -75,11 +92,11 @@
                   <br>
                   <div class="todo">
                       <div class="resposta">
-                        <button type="button" name="p1" id="p1" @click="store" class="btn  btn-lg " > FAMÍLIA</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > AMIGOS</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > PESSOAS DE SUCESSO</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " >SOU AUTOMOTIVADO</button><br><br>
-                        <button type="button" name="p2" id="p2" @click="store" class="btn  btn-lg " > ME FALTA MOTIVAÇÃO</button><br><br>
+                        <button type="button" name="p1" id="p1" @click="store" class="botao" > FAMÍLIA</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > AMIGOS</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > PESSOAS DE SUCESSO</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" >SOU AUTOMOTIVADO</button><br><br>
+                        <button type="button" name="p2" id="p2" @click="store" class="botao" > ME FALTA MOTIVAÇÃO</button><br><br>
                       </div>
                   </div>
               </div>
