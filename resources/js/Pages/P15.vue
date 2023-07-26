@@ -113,15 +113,19 @@
 .grafico1{
   width: 60%;
 }
+
+.botao:hover{
+  background-color: blue;
+}
 .botao{
   position: relative;
-  left: 11rem;
+  left: 0rem;
   top: 0.5rem;
   width: 20rem;
 }
 .img{
   width: 20rem;
-    left: 22rem;
+    left: 32rem;
     top: 2rem;
     position: relative;
 }
@@ -136,7 +140,7 @@
                <div style="width: 100%; height: 2px;background-color: blue; "> </div>
 
                <div class="grafico">
-                  <img class="img" :src="'../../storage/img/GR├БFICO2.png'">
+                  <img class="img" :src="'../../storage/img/acucar_no_sangue.png'">
                 </div>
 
                 
@@ -162,12 +166,10 @@
       </div>
                    
             <div class="todo">
-              <div class="botao"> 
                   <button type="button" @click="store(checkedNames)" class="botao" >AVANÇAR</button><br><br>
               </div>
               <input type="hidden"  id="check" value="{{ checkedNames }}"/>
             </div>
-          </div>
          </container>
 </template>
 

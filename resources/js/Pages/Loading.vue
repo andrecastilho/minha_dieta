@@ -174,7 +174,7 @@ h2{
 .load {
     position: relative;
     width: 10rem;
-    left: -30rem;
+    left: -20rem;
     text-align: center;
 }
 </style>

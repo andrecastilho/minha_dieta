@@ -1,5 +1,12 @@
 <style scoped>
+
 @media only screen and (max-device-width: 600px) {
+
+  .logo{
+    position: relative;
+    right: 8rem !important;
+    width: 8rem !important;
+  }
   .botao {
     position: relative !important;
     height: 5.5rem !important;
@@ -41,7 +48,7 @@
 .logo {
   width: 17%;
   text-align: center;
-  right: 26rem;
+  right: 35rem;
   position: relative;
 }
 
@@ -57,6 +64,13 @@
   padding-top: 20%;
 }
 
+.botao:hover{
+  background-color: blue;
+}
+
+.botao:hover{
+  background-color: blue;
+}
 .botao {
   position: relative;
   border-radius: 20px;
@@ -80,7 +94,7 @@
   padding: 3%;
   font-size: 20px;
   width: 40rem;
-  left: 13rem;
+  left: 22rem;
   position: relative;
 }
 

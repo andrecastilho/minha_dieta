@@ -1,5 +1,14 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {  
+
+  .botao-comida{
+    width: 13rem !important;
+    height: 6rem;
+  }
+
+  .icon{
+    width: 3.8rem !important;
+  }
    .botao{
     position: relative !important;
     height: 3.5rem !important;
@@ -22,6 +31,10 @@
     left: 2rem !important;
   }
 
+  #cafe{
+    width: 20rem !important;
+  }
+
 }
 .head{
     text-align: right;
@@ -42,12 +55,15 @@
     padding-top: 20%;
 }
 
+.botao:hover{
+  background-color: blue;
+}
 .botao{
   position: relative;
   border-radius: 20px;
   height: 4rem;
   border: 0;
-  right: 14rem;
+  right: 190%;
   width: 15rem;
   text-align: center;
 } .corpo { 
@@ -188,6 +204,7 @@ input[type=checkbox]{
   display: none;
 
 }
+
 </style>
         <template> 
           <container>
@@ -212,27 +229,27 @@ input[type=checkbox]{
                           <div class = "botao-comida" >
                             <label for="cafe">
                             <input type="checkbox" id="cafe" value="cafe" v-model="checkedNames">
-                            <img class="logo" for="cafe" style="width: 10%; color: ;" :src="'../../storage/img/xicara-de-cafe.png'">
+                            <img class="icon" for="cafe" style="width: 10%; color: ;" :src="'../../storage/img/xicara-de-cafe.png'">
                            Café</label>
                           </div>
                           <br>
                           <div class="botao-comida">
                             <label for="cha">
                             <input type="checkbox" id="cha" value="cha" v-model="checkedNames">
-                            <img class="logo" style="width: 10%;" :src="'../../storage/img/cha-verde.png'">
+                            <img class="icon" style="width: 10%;" :src="'../../storage/img/cha-verde.png'">
                               Chá</label>
                           </div><br>
 
                           <div class="botao-comida">
                             <label for="agua">
                             <input type="checkbox" id="agua" value="agua" v-model="checkedNames">
-                            <img class="logo" style="width: 10%;" :src="'../../storage/img/garrafa-de-agua.png'">
+                            <img class="icon" style="width: 10%;" :src="'../../storage/img/garrafa-de-agua.png'">
                               Água</label>
                           </div><br>
                           <div class="botao-comida">
                             <label for="refrigerante">
                             <input type="checkbox" id="refrigerante" value="refrigerante" v-model="checkedNames">
-                            <img class="logo" style="width: 10%;" :src="'../../storage/img/refrigerantes.png'">
+                            <img class="icon" style="width: 10%;" :src="'../../storage/img/refrigerantes.png'">
                             Refrigerante
                             </label>
 
@@ -240,7 +257,7 @@ input[type=checkbox]{
 
                           <div class="botao-comida">
                             <label for="suco">
-                              <img class="logo" style="width: 10%;" :src="'../../storage/img/suco.png'">
+                              <img class="icon" style="width: 10%;" :src="'../../storage/img/suco.png'">
                             <input type="checkbox" id="suco" value="suco" v-model="checkedNames">
                             
                              Suco</label>
@@ -250,7 +267,7 @@ input[type=checkbox]{
                           <div class="botao-comida">
                             <label for="agua-com-gas">
                             <input type="checkbox" id="agua-com-gas" value="agua-com-gas" v-model="checkedNames">
-                            <img class="logo" style="width: 10%;" :src="'../../storage/img/agua-com-gas.png'">
+                            <img class="icon" style="width: 10%;" :src="'../../storage/img/agua-com-gas.png'">
                              Agua com Gás</label>
                           </div><br>
 

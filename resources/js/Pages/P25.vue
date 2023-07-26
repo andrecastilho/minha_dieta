@@ -47,14 +47,16 @@
     text-align: center;
     padding-top: 20%;
 }
-
+.botao:hover{
+  background-color: blue;
+}
 .botao{
   position: relative;
   border-radius: 20px;
   height: 4rem;
   border: 0;
   width: 20rem;
-  right: 5rem;
+  right: 80%;
 } .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
@@ -86,7 +88,7 @@
 .pergunta{
   position: relative;
   width: 25rem;
-  left: 17rem;
+  left: 35%;
 }
 
 </style>
@@ -101,7 +103,7 @@
                 <div class="corpo">
 
                   <div style="text-align: center;padding-top: 2%;">
-                <img style="width: 36%;" class="img" :src="'../../storage/img/GR├БFICO5.png'">
+                <img style="width: 36%;" class="img" :src="'../../storage/img/GRAFICO5.png'">
               </div>
                   <br>
                   <div class="pergunta">

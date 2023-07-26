@@ -10,8 +10,30 @@
 /* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES */
 
 /* INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS */
-@media screen and (max-width: 880px) {
-
+@media screen and (max-width: 900px) {
+ .pq-nosso-plano{
+  position: relative;
+  width: 120% !important;
+  top: 5rem !important;
+ }
+  .peso-desejado{
+  position: relative;
+  bottom:  5rem !important;
+  left: 10rem !important;
+}
+  .dia-meu-peso{
+    display: inline !important;
+    position: relative !important;
+    padding: 0% !important;
+    left: 0rem !important;
+    bottom: 0rem !important;
+  }
+  .gordo-magro{
+  width: 7rem !important;
+}
+  .js-weight{
+    width: 12rem !important;
+  }
   #food-icon {
     width: 8rem !important;
   }
@@ -31,7 +53,7 @@
 
   #metabolic-age-phase-1 {
     position: relative;
-    right: 1.5rem;
+    left: 0rem !important;
   }
 
   .js-animation {
@@ -192,6 +214,14 @@
     top: 30rem !important;
   }
 
+  .balao-como{
+    height: 20rem !important;
+  }
+  .como{
+    position: relative;
+    padding-top: 2rem;
+    font-size: 0.8rem !important;
+  }
   .como-funciona-2 {
     top: 30rem !important;
   }
@@ -888,7 +918,7 @@ a {
   top: 78%;
   width: 100%;
   color: white;
-  background-image: url('../storage/img/fundo_degrade.png');
+  background-color: #717850;
   padding: 5rem;
   font-size: 140%;
   top: 29rem;
@@ -981,7 +1011,7 @@ h3 {
 .quadro-branco {
   background-color: white;
   color: dimgrey;
-  padding: 21%;
+  padding: 20%;
   margin: 1rem;
   border-radius: 40px 40px 40px;
   height: 25rem;
@@ -1001,7 +1031,7 @@ h3 {
 
 .bloco-verde-escuro {
   position: relative;
-  width: 100%;
+  width: 70rem;
   padding: 10%;
   background-color: rgb(59 72 19);
   color: white;
@@ -1329,7 +1359,7 @@ h3 {
 .quero-meu-plano-agora1 {
   position: relative;
   top: 72rem;
-  left: 11rem;
+  left: 30rem;
 }
 
 .foot {
@@ -1521,13 +1551,13 @@ h3 {
 .frutas {
   float: right;
   position: relative;
-  width: 5rem;
 }
 
 .idMetabolica {
   display: grid;
   grid-template-columns: 2fr 2fr;
   padding: 10%;
+  text-align: center;
 
 }
 
@@ -1536,15 +1566,43 @@ h3 {
   font-size: 0.7rem;
   left: -1rem;
 }
+#weight-down-chart-solid{
+  fill: #8fcb27;
+
+}
+.das-pessoas-que{
+  width: 15rem;
+  color: black;
+  padding: 1rem;
+}
+.gordo-magro{
+  width: 15rem;
+}
+.dia-meu-peso{
+  position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    word-spacing: 8px;
+}
+.peso-desejado{
+  position: relative;
+  bottom:  5rem;
+  left: 14rem;
+}
+.pq-nosso-plano{
+  position: relative;
+    right: 3rem;
+    width: 162%;
+}
 </style>
 
 <template>
   <container>
-    <div class="content" @load="calculos()">
+    <div class="content" @load="calculos()" style="overflow-x: unset;">
       <div class="row">
         <div class="col-sm" style="padding-left: 10%;">
           <div class="for-logo">
-            <img style="width: 50%;" :src="'../storage/img/Cetogenica v1.png'">
+            <img style="width: 50%;" :src="'../storage/img/Cetogenicav1.png'">
           </div>
           <div class="para-de-perder">
             Pare de perder tempo com dietas que não funcionam, <br>
@@ -1605,12 +1663,12 @@ h3 {
                 <div style=" white-space: nowrap;">
                   <h3 class="">Meu peso</h3>
                 </div>
-                <div style="width: 150%;font-size: 150%;">
+                <div style="font-size: 150%;">
                   <span class="font-bold">Peso alcançável</span> no final das primeiras 4 semanas
                 </div>
 
-
-                <svg style=" white-space: nowrap;width: 150%;" class="js-weight js-loose-weight" viewBox="0 0 285 196"
+                {{ peso }}kg
+                <svg style=" white-space: nowrap;width: 15rem;" class="js-weight js-loose-weight" viewBox="0 0 285 196"
                   shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
 
                   <defs>
@@ -1622,27 +1680,9 @@ h3 {
                       </stop>
                     </linearGradient>
                   </defs>
+                
                   <g id="weight-down-weight-down">
-                    <g id="weight-down-chart-grid">
-                      <line id="weight-down-line_2" x1="221.5" y1="172.5" x2="221.5" y2="0.5" fill="none"
-                        stroke="var(--main-color)" stroke-opacity="0.15" stroke-linecap="round" stroke-dasharray="8,12">
-                      </line>
-                      <line id="weight-down-line_1" x1="274.5" y1="172.5" x2="274.5" y2="0.5" fill="none"
-                        stroke="var(--main-color)" stroke-opacity="0.15" stroke-linecap="round" stroke-dasharray="8,12">
-                      </line>
-                      <line id="weight-down-line_3" x1="168.5" y1="172.5" x2="168.5" y2="0.5" fill="none"
-                        stroke="var(--main-color)" stroke-opacity="0.15" stroke-linecap="round" stroke-dasharray="8,12">
-                      </line>
-                      <line id="weight-down-line_4" x1="115.5" y1="172.5" x2="115.5" y2="0.5" fill="none"
-                        stroke="var(--main-color)" stroke-opacity="0.15" stroke-linecap="round" stroke-dasharray="8,12">
-                      </line>
-                      <line id="weight-down-line_5" x1="62.5" y1="172.5" x2="62.5" y2="0.5" fill="none"
-                        stroke="var(--main-color)" stroke-opacity="0.15" stroke-linecap="round" stroke-dasharray="8,12">
-                      </line>
-                      <line id="weight-down-line_6" x1="9.5" y1="172.5" x2="9.50001" y2="0.5" fill="none"
-                        stroke="var(--main-color)" stroke-opacity="0.15" stroke-linecap="round" stroke-dasharray="8,12">
-                      </line>
-                    </g>
+                    
                     <path id="weight-down-chart-solid"
                       d="M62,60.5C40.0898,45.0026,9,14,9,14v159h266v-25c0,0-25.5,9.5-53.5-18.5C206.596,114.596,203,100,169,100c-21,0-28.5-28-53.5-28.5-21.3258-.4265-33,3.5-53.5-11Z"
                       opacity="0" fill="url(#weight-down-chart-solid-fill)"></path>
@@ -1650,13 +1690,16 @@ h3 {
                       d="M9,14c0,0,31.0898,31.0026,53,46.5c20.5,14.5,32.1742,10.5735,53.5,11C140.5,72,148,100,169,100c34,0,37.596,14.596,52.5,29.5c28,28,53.5,18.5,53.5,18.5"
                       fill="none" stroke="var(--weight-line)" stroke-width="3" stroke-linecap="round"
                       stroke-dashoffset="311.43" stroke-dasharray="311.43"></path>
+
                     <g id="weight-down-pointer_2_ts" transform="translate(274,149) scale(0,0)">
                       <circle id="weight-down-pointer_2" r="7.5" transform="translate(0,0)" fill="var(--weight-fill)"
                         stroke="var(--weight-stroke)" stroke-width="3"></circle>
                     </g>
+                    
+                    
                     <g id="weight-down-pointer_1_ts" transform="translate(10,14) scale(0,0)">
                       <circle id="weight-down-pointer_1" r="8" transform="translate(0,0)" fill="var(--weight-fill)"
-                        stroke="var(--weight-stroke)" stroke-width="4"></circle>
+                        stroke="var(--weight-stroke)" stroke-width="4">{{ peso_desejado }}kg</circle>
                     </g><text id="weight-down-value-1" dx="0" dy="0" font-size="18" font-weight="700" opacity="0"
                       fill="#fff">
                       <tspan id="weight-down-tspan7" x="31" y="20.1523" font-size="18" font-weight="700"
@@ -1670,13 +1713,14 @@ h3 {
                     </text>
                   </g>
                 </svg>
-                <div style="width: 150%;padding: 1%;">
-                  <span>Dia 1</span>
-                  <span>Dia 6</span>
-                  <span>Dia 12</span>
-                  <span>Dia 18</span>
-                  <span>Dia 24</span>
-                  <span>Dia 30</span>
+                <div class="peso-desejado">{{ peso_desejado }}kg</div>
+                <div class="dia-meu-peso">
+                  <span>1  </span>Dia
+                  <span>6 </span>
+                  <span>Dia 12  </span>
+                  <span>Dia 18 </span>
+                  <span>Dia 24    </span>
+                  <span> 30</span>
                 </div>
               </div>
             </div>
@@ -1684,11 +1728,11 @@ h3 {
           <div class="b">
             <div class="balao-vertical">
               <div class="">
-                <h4 style="width: 200%;">Estimativas de mudança corporal</h4>
-                <div style="width: 150%;margin: 11%;font-size: 120%;">Com base no sucesso dos outros
+                <h4 style="width: 20rem;">Estimativas de mudança corporal</h4>
+                <div style="font-size: 120%;">Com base no sucesso dos outros
                   utili z adores com o mesmo tipo metabólico
                 </div>
-                <div style="width: 160%;">
+                <div class="gordo-magro">
                   <div class="" style="width: 40%;float: left;position: relative;">
                     <svg id="silhouette" class="gender-mode__man !h-[215px] !w-[114px]" data-e2e="estimates-graph-male"
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121 215"
@@ -1736,7 +1780,7 @@ h3 {
                   Pessoas semelhantes a si alcançaram os resultados desejados em menos de 4 semana</span>
               </div>
               <div>
-                <svg style="width: 150%;  padding-top: 0%;" id="silhouette-male-purple" data-e2e="similarity-graph-male"
+                <svg style="width: 8rem;  padding-top: 0%;" id="silhouette-male-purple" data-e2e="similarity-graph-male"
                   class="gender-mode__man" viewBox="0 0 140 296" shape-rendering="geometricPrecision"
                   text-rendering="geometricPrecision">
                   <g id="silhouette-male-purple-silhouette-male-purple">
@@ -1815,9 +1859,9 @@ h3 {
                   <div class="sua-idade-metabolica"><b>Sua idade Metabolica</b>
                     <div id="idade_metabolica2">*</div>
                   </div>
-                  <div style="font-size: 80%;" id="idade_metabolica1"><b>Sua idade </b> {{ idade }}</div>
+                  <div style="font-size: 80%;" id="idade_metabolica1"><b>Sua idade </b> <br>{{ idade }}</div>
                 </div>
-                <svg id="metabolic-age-phase-1" style="top: -1rem;position: relative;width: 119px;"
+                <svg id="metabolic-age-phase-1" style="left:2rem;top: -1rem;position: relative;width: 119px;"
                   class="js-metabolic metabolic-age-phase-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 252"
                   shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                   <g id="metabolic-age-phase-1-metabolic-age-phase-1">
@@ -1980,46 +2024,12 @@ h3 {
               <div class="text-base text-zeta">Pode estar confiante que o <span class="font-bold">Plano alimentar
                 </span> irá levá-lo onde quer.</div>
               <div class="js-animation relative">
-                <svg style="fill:black" class="mt-10" viewBox="0 0 285 238" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="var(--main-color)" stroke-opacity=".1" stroke-linecap="round" stroke-dasharray="8 12"
-                    d="M22.5 237.5h262M22.5 195.5h262M22.5 153.5h179M22.5 111.5h262M22.5 69.5h262M22.5 27.5h262"></path>
-                  <path fill="url(#tfhsvngaea)" d="M140 27h62v168h-62z"></path>
-                  <path stroke="var(--plan-col-bg)" stroke-width="3" stroke-linecap="round"
-                    d="M139.5 195.5h63M139.5 26.5h63">
-                  </path>
-                  <circle cx="171" cy="196" r="8" fill="var(--plan-dot-right)" stroke="var(--plan-circle)"
-                    stroke-width="4">
-                  </circle>
-                  <path d="M172.5 41a1.5 1.5 0 0 0-3 0h3zM171 182l8.66-15h-17.32l8.66 15zm-1.5-141v127.5h3V41h-3z"
-                    fill="var(--plan-pointer-right)"></path>
-                  <circle cx="171" cy="27" r="8" fill="var(--plan-dot-right)" stroke="var(--plan-circle)"
-                    stroke-width="4">
-                  </circle>
-                  <path fill="url(#leqh2u4f0b)" d="M54 27h62v84H54z"></path>
-                  <path stroke="#F53373" stroke-width="3" stroke-linecap="round" d="M53.5 110.5h63M53.5 26.5h63"></path>
-                  <circle cx="85" cy="111" r="8" fill="var(--plan-dot-left)" stroke="var(--plan-circle)" stroke-width="4">
-                  </circle>
-                  <path d="M86.5 41a1.5 1.5 0 0 0-3 0h3zM85 97l8.66-15H76.34L85 97zm-1.5-56v42.5h3V41h-3z"
-                    fill="var(--plan-pointer-left)"></path>
-                  <circle cx="85" cy="27" r="8" fill="var(--plan-dot-left)" stroke="var(--plan-circle)" stroke-width="4">
-                  </circle>
-                  <defs>
-                    <linearGradient id="tfhsvngaea" x1="171" y1="27" x2="171" y2="195" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="var(--plan-col-bg)" stop-opacity="0"></stop>
-                      <stop offset="1" stop-color="var(--plan-col-bg)" stop-opacity=".3"></stop>
-                    </linearGradient>
-                    <linearGradient id="leqh2u4f0b" x1="85" y1="27" x2="85" y2="111" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#F53373" stop-opacity="0"></stop>
-                      <stop offset="1" stop-color="#F53373" stop-opacity=".3"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <img class="pq-nosso-plano" :src="'../storage/img/pq-nosso-plano.png'">
               </div>
             </div>
           </div>
           <div style="text-align: center;font-size: 6rem;color:rgb(143, 203, 39)">92%</div>
-          <div style="font-size: 80%;">
+          <div class="das-pessoas-que">
             das pessoas que fazem dieta cetogênica perdem peso muito mais rápido de forma saudável
           </div>
           <div class="quero-agora">
@@ -2079,7 +2089,7 @@ h3 {
       <div class="ponto-critico">
 
         <div class="" style="float: left;">
-          <img style="margin:0% ;width: 13rem;" :src="'../storage/img/interrogacao.png'">
+          <img style="margin:0% ;width: 13rem;" :src="'../storage/img/interrogacao.png'"> 
         </div>
         <div style="color: white;
     font-size: 2.3rem;
@@ -2594,8 +2604,10 @@ export default defineComponent({
       const loseWeight = maintenance - 70 + 2000;
       const gainWeight = maintenance + 70 + 2000;
 
+      let idadeMetabolica = String(gainWeight) ;
+
       // document.getElementById("idade_metabolica1").innerHTML = loseWeight;
-      document.getElementById("idade_metabolica2").innerHTML = "<div class='resultIdadeMetabolica'>" + gainWeight + "</div>";
+      document.getElementById("idade_metabolica2").innerHTML = "<div class='resultIdadeMetabolica'>" + idadeMetabolica.substring(0,2) + "</div>";
     },
   },
 

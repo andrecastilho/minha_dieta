@@ -211,6 +211,10 @@ input[type=checkbox]{
   display: none;
 
 }
+
+.botao:hover{
+  background-color: blue;
+}
 .botao{
   position: relative;
   width: 15rem;

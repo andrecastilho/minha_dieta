@@ -65,7 +65,9 @@
   text-align: center;
   padding-top: 20%;
 }
-
+.botao:hover{
+  background-color: blue;
+}
 .botao{
   position: relative;
   border-radius: 20px;
@@ -133,7 +135,7 @@ button {
 .pergunta {
   width: 27rem;
   position: relative;
-  left: 15rem;
+  left: 25rem;
 }
 
 .grafico {
@@ -159,7 +161,7 @@ button {
     <div class="corpo">
 
       <div class="grafico">
-        <img class="img" :src="'../../storage/img/GR├БFICO4.png'">
+        <img class="img" :src="'../../storage/img/GRAFICO4.png'">
       </div>
 
       <br>

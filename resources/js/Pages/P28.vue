@@ -46,7 +46,7 @@
   font-size: large;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 9%;
+  padding-top: 3%;
   height: 72rem;
 }
 

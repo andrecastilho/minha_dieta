@@ -12,9 +12,13 @@
 
 
 @media only screen and (max-device-width: 750px) {
+  .objetivos-emagrecimento{
+    position: relative;
+    left: 2rem !important;
+  }
 .corpo{
   position: relative;
-    right: 10rem !important;
+    right: 0rem !important;
 }
   .bloco2{
     font-size: 1.2rem;
@@ -61,7 +65,7 @@
   }
   .junte-se{
     position: relative !important;
-    left: -2rem !important;
+    left: 0rem !important;
     width: -1rem !important;
     font-size: 1rem !important;
   }
@@ -99,9 +103,9 @@
     margin: 0.5rem;
     width: 100% !important;
     margin: 0.5rem;
-    /* right: 2rem; */
     position: relative;
     float: inherit;
+    height: 36rem !important;
   }
   .btn{
         /* width: 14rem !IMPORTANT;
@@ -140,7 +144,7 @@
 .head {
   text-align: right;
   background-color: rgb(60, 70, 37);
-  height: 3rem;
+  height: 4rem;
 }
 
 .menu {
@@ -152,6 +156,8 @@
   width: 15%;
   float: left;
   padding-left: 3%;
+  position: relative;
+  top: 1rem;
 }
 
 .prato {
@@ -210,7 +216,7 @@ d {
 .objetivos-emagrecimento {
   position: relative;
   padding: 6%;
-  left: 3rem;
+  left: 6rem;
 }
 
 .todo-plano {
@@ -239,8 +245,8 @@ d {
   text-align: center;
   font-family: 'Montserrat';
   font-size: 2rem;
-  left: 15rem;
-  width: 50rem;
+  left: 25%;
+  width: 42rem;
 }
 
 .prato2 {
@@ -536,7 +542,7 @@ container{
       <div>
         <img class="logo" :src="'../storage/img/LOGOTIPO.png'">
       </div>
-      <div class="menu">
+      <!-- <div class="menu">
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
@@ -549,7 +555,7 @@ container{
             
             </ul>
           </div>
-      </div>
+      </div> -->
     </div>
         <div class="imagem_prato">
           <img class="d-block w-100" :src="'../storage/img/PRATO.jpg'" alt="">
@@ -567,7 +573,7 @@ container{
                 style="float:right;width: 15%;height: 2rem;border: 0; " :src="'../storage/img/MULHER.png'" alt="homem"> Mulher </a>
           </div>
           <div class="homem btn-white">
-            <a class="btn btn-primary btn-lg btn-white2" style="color:blue;width: 8rem; height: 3rem;" href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
+            <a class="btn btn-primary btn-lg btn-white2" style="width: 8rem; height: 3rem;" href="p/?sexo=homem" id="homem" role="button" aria-pressed="true"><img
                 style="float:right;width: 18%; height: 2rem;border: 0;" :src="'../storage/img/HOMEM.png'" alt="homem">Homem</a>
           </div>
         </div>
@@ -642,14 +648,14 @@ container{
           </div>
           <br>
           <div class="painel-duplo">
-            <div class="oque-vai-receber" style="float: right;width:45%;padding: 5%;">
+            <div class="oque-vai-receber" style="float: right;width:45%;padding: 5%;height: 15.5rem;">
               <b>A dieta Cetogênica é bem simples</b> -
               alimente-se de gorduras para eliminar
               gordura. A ideia básica deste estilo de
               vida é que <b>ele ensina o seu corpo </b>a
               substituir a glicose como a principal
               fonte de energia e no lugar <b>queima
-                gordura como combustível.</b><br>
+                gordura como combustível.</b>
             </div>
             <div class="oque-vai-receber" style="float: left;width:45%;padding:5%">
               <b>A dieta Cetogênica envolve uma
@@ -659,7 +665,7 @@ container{
               <b>75% de gorduras e 20% de proteínas.</b>
               O mundo <b>está louco por esta dieta</b>
               porque são muitos os benefícios ao
-              segui-la.<br>
+              segui-la.
             </div>
           </div>
         </div>

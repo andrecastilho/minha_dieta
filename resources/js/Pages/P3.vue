@@ -42,13 +42,14 @@
   border: 0;
 } .corpo { 
   font-family: 'Montserrat';
-  background-color: #717850;
-  color: antiquewhite;
-  text-align: center;
-  font-size: large;
-  height: 100%;
-  padding: 10%;
-  height: 72rem;
+    background-color: #717850;
+    color: antiquewhite;
+    text-align: center;
+    font-size: large;
+    height: 100%;
+    /* padding: 10%; */
+    height: 72rem;
+    padding-top: 2rem;
 
 }
 

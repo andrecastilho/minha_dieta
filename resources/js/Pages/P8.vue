@@ -47,7 +47,9 @@
     text-align: center;
     padding-top: 20%;
 }
-
+.botao:hover{
+  background-color: blue;
+}
 .botao{
   position: relative;
   border-radius: 20px;

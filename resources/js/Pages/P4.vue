@@ -55,6 +55,7 @@
   height: 4rem;
   border: 0;
   bottom: 3rem;
+  left: 0rem;
 } .corpo { 
   font-family: 'Montserrat';
   background-color: #717850;
@@ -104,6 +105,9 @@
   padding-left: 2%;
    width: 46%;
 }
+.botao:hover{
+  background-color: blue;
+}
 </style>
         <template> 
           <container>
@@ -113,7 +117,7 @@
               </div>
             </div>
                 <div class="texto">
-                        <img class="imagem" style="" :src="'../storage/img/GR├БFICO2.png'" alt="">
+                        <img class="imagem" style="" :src="'../storage/img/peso.png'" alt="">
                 </div>
                 <div class="corpo">
                     <div class="pergunta">
@@ -127,7 +131,7 @@
                     </div>
                     <br>
                   <div class="todo">
-                    <div style="text-align: center;position: relative;padding-left: 68%;"> 
+                    <div> 
                         <button type="button" name="p1" id="p1" @click="store" class="botao" >AVANÇAR</button><br><br>
                       </div>
                      

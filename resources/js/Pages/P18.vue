@@ -1,5 +1,11 @@
 <style scoped>
 @media only screen and (max-device-width: 600px) {   
+  .grafico{
+    /* background-color: #717850;
+    position: relative !important;
+    right: 15rem !important;
+    width: 10rem !important; */
+  }
   .botao{
     position: relative !important;
     left: 3rem !important;
@@ -8,7 +14,7 @@
     width: 15rem !important;
   }
   .img{
-    left: 2rem !important;
+    left: -13rem !important;
   }
   .contain {
     display: none !important;
@@ -63,7 +69,9 @@
   text-align: center;
   padding-top: 20%;
 }
-
+.botao:hover{
+  background-color: blue;
+}
 .botao{
   position: relative;
   border-radius: 20px;
@@ -125,12 +133,14 @@ button {
 .pergunta {
   position: relative;
   width: 30rem;
-  left: 12rem;
+  left: 26rem;
 }
 
 .grafico {
   width: 100%;
   background-color: #717850;
+  position: relative;
+  padding-left: 15rem;
 }
 
 .img {
@@ -150,7 +160,7 @@ button {
     <div style="width: 100%; height: 2px;background-color: blue; "> </div>
 
     <div class="grafico">
-      <img class="img" :src="'../../storage/img/GR├БFICO3.png'">
+      <img class="img" :src="'../../storage/img/grafico3.png'">
     </div>
 
     <div class="corpo">
