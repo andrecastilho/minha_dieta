@@ -3,9 +3,11 @@ ynJO2kZCx%Na
 Servidor FTP: ftp.fishagencia.com.br
 FTP & porta FTPS explícita:  21
 ynJO2kZCx%Na
-ynJO2kZCx%Na
+
 
 ssh -p 22  fishag12@br216.hostgator.com.br
+
+
 
 
 
