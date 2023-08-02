@@ -1,9 +1,10 @@
+message 
 Nome de usuário do FTP: minha_dieta@minhadietacetogenica.com
 ynJO2kZCx%Na
 Servidor FTP: ftp.fishagencia.com.br
 FTP & porta FTPS explícita:  21
 ynJO2kZCx%Na
-
+ 
 
 ssh -p 22  fishag12@br216.hostgator.com.br
 
@@ -17,7 +18,7 @@ APP_KEY=base64:pq/6Fdp47Rjem5U2+idm+uXmPAXm8QH7SnTKjiIKvCQ=
 APP_DEBUG=true
 APP_URL=http://localhost
 
-LOG_CHANNEL=stack
+LOG_CHANNEL=stack 
 LOG_DEPRECATIONS_CHANNEL=null
 LOG_LEVEL=debug
 
